@@ -229,6 +229,7 @@ const addedIcons = [
       'icons-mail-open',
       'icons-minus',
       'icons-palette',
+      'icons-pencil-ruler',
       'icons-pipette',
       'icons-redo-2',
       'icons-scroll',
