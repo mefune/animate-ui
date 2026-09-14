@@ -1,0 +1,29 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "icons-align-end-horizontal",
+  "title": "Align End Horizontal Icon",
+  "description": "Align End Horizontal icon component.",
+  "dependencies": [
+    "motion"
+  ],
+  "registryDependencies": [
+    "@animate-ui/icons-icon"
+  ],
+  "files": [
+    {
+      "path": "registry/icons/align-end-horizontal/index.tsx",
+      "content": "'use client';\n\nimport * as React from 'react';\nimport { motion, type Variants } from 'motion/react';\n\nimport {\n  getVariants,\n  useAnimateIconContext,\n  IconWrapper,\n  type IconProps,\n} from '@/components/animate-ui/icons/icon';\n\ntype AlignEndHorizontalProps = IconProps<keyof typeof animations>;\n\nconst animations = {\n  default: {\n    b1: {\n      initial: { y: 0 },\n      animate: {\n        y: [0, -2.5, 0],\n        transition: { duration: 0.9, times: [0, 0.45, 1], ease: 'easeInOut' },\n      },\n    },\n    b2: {\n      initial: { y: 0 },\n      animate: {\n        y: [0, 2.5, 0],\n        transition: { duration: 0.9, times: [0, 0.45, 1], ease: 'easeInOut' },\n      },\n    },\n    edge: {},\n  } satisfies Record<string, Variants>,\n} as const;\n\nfunction IconComponent({ size, ...props }: AlignEndHorizontalProps) {\n  const { controls } = useAnimateIconContext();\n  const variants = getVariants(animations);\n\n  return (\n    <motion.svg\n      xmlns=\"http://www.w3.org/2000/svg\"\n      width={size}\n      height={size}\n      viewBox=\"0 0 24 24\"\n      fill=\"none\"\n      stroke=\"currentColor\"\n      strokeWidth={2}\n      strokeLinecap=\"round\"\n      strokeLinejoin=\"round\"\n      initial=\"initial\"\n      animate={controls}\n      {...props}\n    >\n      <motion.rect\n        width=\"6\"\n        height=\"16\"\n        x=\"4\"\n        y=\"2\"\n        rx=\"2\"\n        variants={variants.b1}\n        initial=\"initial\"\n        animate={controls}\n      />\n      <motion.rect\n        width=\"6\"\n        height=\"9\"\n        x=\"14\"\n        y=\"9\"\n        rx=\"2\"\n        variants={variants.b2}\n        initial=\"initial\"\n        animate={controls}\n      />\n      <motion.path\n        d=\"M22 22H2\"\n        variants={variants.edge}\n        initial=\"initial\"\n        animate={controls}\n      />\n    </motion.svg>\n  );\n}\n\nfunction AlignEndHorizontal(props: AlignEndHorizontalProps) {\n  return <IconWrapper icon={IconComponent} {...props} />;\n}\n\nexport {\n  animations,\n  AlignEndHorizontal,\n  AlignEndHorizontal as AlignEndHorizontalIcon,\n  type AlignEndHorizontalProps,\n  type AlignEndHorizontalProps as AlignEndHorizontalIconProps,\n};\n",
+      "type": "registry:ui",
+      "target": "components/animate-ui/icons/align-end-horizontal.tsx"
+    }
+  ],
+  "meta": {
+    "keywords": [
+      "items",
+      "bottom",
+      "flex",
+      "justify"
+    ]
+  },
+  "type": "registry:ui"
+}

@@ -1,0 +1,46 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "icons-minus",
+  "type": "registry:ui",
+  "title": "Minus Icon",
+  "description": "Minus icon component.",
+  "registryDependencies": [
+    "@animate-ui/icons-icon"
+  ],
+  "dependencies": [
+    "motion"
+  ],
+  "files": [
+    {
+      "path": "registry/icons/minus/index.tsx",
+      "type": "registry:ui",
+      "target": "components/animate-ui/icons/minus.tsx"
+    }
+  ],
+  "meta": {
+    "keywords": [
+      "subtract",
+      "remove",
+      "decrease",
+      "decrement",
+      "reduce",
+      "negative",
+      "calculate",
+      "line",
+      "divider",
+      "separator",
+      "horizontal rule",
+      "hr",
+      "html",
+      "markup",
+      "markdown",
+      "---",
+      "toolbar",
+      "operator",
+      "code",
+      "coding",
+      "minimum",
+      "downgrade"
+    ]
+  }
+}

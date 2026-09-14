@@ -1,0 +1,34 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "icons-undo-2",
+  "title": "Undo 2 Icon",
+  "description": "Undo 2 icon component.",
+  "dependencies": [
+    "motion"
+  ],
+  "registryDependencies": [
+    "@animate-ui/icons-icon"
+  ],
+  "files": [
+    {
+      "path": "registry/icons/undo-2/index.tsx",
+      "content": "'use client';\n\nimport * as React from 'react';\nimport { motion, type Variants } from 'motion/react';\n\nimport {\n  getVariants,\n  useAnimateIconContext,\n  IconWrapper,\n  type IconProps,\n} from '@/components/animate-ui/icons/icon';\n\ntype Undo2Props = IconProps<keyof typeof animations>;\n\nconst animations = {\n  default: {\n    curve: {\n      initial: { pathLength: 1 },\n      animate: {\n        pathLength: [0, 1],\n        transition: { duration: 0.5, ease: 'easeInOut' },\n      },\n    },\n    head: {\n      initial: { pathLength: 1, opacity: 1 },\n      animate: {\n        pathLength: [0, 1],\n        opacity: [0, 1],\n        transition: { duration: 0.25, delay: 0.4, ease: 'easeOut' },\n      },\n    },\n  } satisfies Record<string, Variants>,\n} as const;\n\nfunction IconComponent({ size, ...props }: Undo2Props) {\n  const { controls } = useAnimateIconContext();\n  const variants = getVariants(animations);\n\n  return (\n    <motion.svg\n      xmlns=\"http://www.w3.org/2000/svg\"\n      width={size}\n      height={size}\n      viewBox=\"0 0 24 24\"\n      fill=\"none\"\n      stroke=\"currentColor\"\n      strokeWidth={2}\n      strokeLinecap=\"round\"\n      strokeLinejoin=\"round\"\n      initial=\"initial\"\n      animate={controls}\n      {...props}\n    >\n      <motion.path\n        d=\"M11 20h3.5a5.5 5.5 0 0 0 5.5-5.5a5.5 5.5 0 0 0-5.5-5.5H4\"\n        variants={variants.curve}\n        initial=\"initial\"\n        animate={controls}\n      />\n      <motion.path\n        d=\"M9 14 4 9l5-5\"\n        variants={variants.head}\n        initial=\"initial\"\n        animate={controls}\n      />\n    </motion.svg>\n  );\n}\n\nfunction Undo2(props: Undo2Props) {\n  return <IconWrapper icon={IconComponent} {...props} />;\n}\n\nexport {\n  animations,\n  Undo2,\n  Undo2 as Undo2Icon,\n  type Undo2Props,\n  type Undo2Props as Undo2IconProps,\n};\n",
+      "type": "registry:ui",
+      "target": "components/animate-ui/icons/undo-2.tsx"
+    }
+  ],
+  "meta": {
+    "keywords": [
+      "redo",
+      "rerun",
+      "history",
+      "back",
+      "return",
+      "reverse",
+      "revert",
+      "direction",
+      "u-turn"
+    ]
+  },
+  "type": "registry:ui"
+}

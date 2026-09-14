@@ -1,0 +1,45 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "icons-ghost",
+  "title": "Ghost Icon",
+  "description": "Ghost icon component.",
+  "dependencies": [
+    "motion"
+  ],
+  "registryDependencies": [
+    "@animate-ui/icons-icon"
+  ],
+  "files": [
+    {
+      "path": "registry/icons/ghost/index.tsx",
+      "content": "'use client';\n\nimport * as React from 'react';\nimport { motion, type Variants } from 'motion/react';\n\nimport {\n  getVariants,\n  useAnimateIconContext,\n  IconWrapper,\n  type IconProps,\n} from '@/components/animate-ui/icons/icon';\n\ntype GhostProps = IconProps<keyof typeof animations>;\n\nconst animations = {\n  default: {\n    body: {},\n    eyes: {\n      initial: { x: 0 },\n      animate: {\n        x: [0, 1.8, 1.8, -1.8, -1.8, 0],\n        transition: {\n          duration: 1.4,\n          times: [0, 0.2, 0.4, 0.6, 0.8, 1],\n          ease: 'easeInOut',\n        },\n      },\n    },\n  } satisfies Record<string, Variants>,\n} as const;\n\nfunction IconComponent({ size, ...props }: GhostProps) {\n  const { controls } = useAnimateIconContext();\n  const variants = getVariants(animations);\n\n  return (\n    <motion.svg\n      xmlns=\"http://www.w3.org/2000/svg\"\n      width={size}\n      height={size}\n      viewBox=\"0 0 24 24\"\n      fill=\"none\"\n      stroke=\"currentColor\"\n      strokeWidth={2}\n      strokeLinecap=\"round\"\n      strokeLinejoin=\"round\"\n      initial=\"initial\"\n      animate={controls}\n      {...props}\n    >\n      <motion.path\n        d=\"M7.528 20.472a1.6 1.6 0 012.277 0l1.057 1.056a1.6 1.6 0 002.276 0l1.057-1.056a1.6 1.6 0 012.277 0l1.114 1.114a1.4 1.4 0 002.414-1V10a8 8 0 00-16 0v10.586a1.4 1.4 0 002.414 1z\"\n        variants={variants.body}\n        initial=\"initial\"\n        animate={controls}\n      />\n      <motion.path\n        d=\"M9 10v1\"\n        variants={variants.eyes}\n        initial=\"initial\"\n        animate={controls}\n      />\n      <motion.path\n        d=\"M15 10v1\"\n        variants={variants.eyes}\n        initial=\"initial\"\n        animate={controls}\n      />\n    </motion.svg>\n  );\n}\n\nfunction Ghost(props: GhostProps) {\n  return <IconWrapper icon={IconComponent} {...props} />;\n}\n\nexport {\n  animations,\n  Ghost,\n  Ghost as GhostIcon,\n  type GhostProps,\n  type GhostProps as GhostIconProps,\n};\n",
+      "type": "registry:ui",
+      "target": "components/animate-ui/icons/ghost.tsx"
+    }
+  ],
+  "meta": {
+    "keywords": [
+      "spirit",
+      "haunt",
+      "specter",
+      "apparition",
+      "wraith",
+      "shade",
+      "phantom",
+      "entity",
+      "shadow",
+      "silhouette",
+      "pac-man",
+      "spooky",
+      "halloween",
+      "haunted",
+      "invisible",
+      "hidden",
+      "empty",
+      "dead",
+      "obsolete",
+      "outdated"
+    ]
+  },
+  "type": "registry:ui"
+}

@@ -1,0 +1,77 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "icons-shield-check",
+  "type": "registry:ui",
+  "title": "Shield Check Icon",
+  "description": "Shield Check icon component.",
+  "registryDependencies": [
+    "@animate-ui/icons-icon"
+  ],
+  "dependencies": [
+    "motion"
+  ],
+  "files": [
+    {
+      "path": "registry/icons/shield-check/index.tsx",
+      "type": "registry:ui",
+      "target": "components/animate-ui/icons/shield-check.tsx"
+    }
+  ],
+  "meta": {
+    "keywords": [
+      "cybersecurity",
+      "secured",
+      "safety",
+      "protection",
+      "protected",
+      "guardian",
+      "guarded",
+      "armored",
+      "armoured",
+      "defense",
+      "defence",
+      "defended",
+      "blocked",
+      "threat",
+      "prevention",
+      "prevented",
+      "antivirus",
+      "vigilance",
+      "vigilant",
+      "active",
+      "activated",
+      "enabled",
+      "detection",
+      "scanned",
+      "found",
+      "strength",
+      "strong",
+      "tough",
+      "invincible",
+      "invincibility",
+      "invulnerable",
+      "undamaged",
+      "audited",
+      "admin",
+      "verification",
+      "verified",
+      "certification",
+      "certified",
+      "tested",
+      "passed",
+      "qualified",
+      "cleared",
+      "cleaned",
+      "disinfected",
+      "uninfected",
+      "task",
+      "completed",
+      "todo",
+      "done",
+      "ticked",
+      "checked",
+      "crest",
+      "bravery"
+    ]
+  }
+}

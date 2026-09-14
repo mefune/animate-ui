@@ -1,0 +1,27 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "icons-zoom-in",
+  "title": "Zoom In Icon",
+  "description": "Zoom In icon component.",
+  "dependencies": [
+    "motion"
+  ],
+  "registryDependencies": [
+    "@animate-ui/icons-icon"
+  ],
+  "files": [
+    {
+      "path": "registry/icons/zoom-in/index.tsx",
+      "content": "'use client';\n\nimport * as React from 'react';\nimport { motion, type Variants } from 'motion/react';\n\nimport {\n  getVariants,\n  useAnimateIconContext,\n  IconWrapper,\n  type IconProps,\n} from '@/components/animate-ui/icons/icon';\n\ntype ZoomInProps = IconProps<keyof typeof animations>;\n\nconst animations = {\n  default: {\n    glass: {\n      initial: { scale: 1, transformOrigin: '50% 50%' },\n      animate: {\n        scale: [1, 1.16, 1],\n        transformOrigin: '50% 50%',\n        transition: { duration: 0.9, times: [0, 0.45, 1], ease: 'easeInOut' },\n      },\n    },\n    part: {},\n    handle: {\n      initial: { x2: 16.65, y2: 16.65 },\n      animate: {\n        x2: [16.65, 18.3, 16.65],\n        y2: [16.65, 18.3, 16.65],\n        transition: { duration: 0.9, times: [0, 0.45, 1], ease: 'easeInOut' },\n      },\n    },\n  } satisfies Record<string, Variants>,\n} as const;\n\nfunction IconComponent({ size, ...props }: ZoomInProps) {\n  const { controls } = useAnimateIconContext();\n  const variants = getVariants(animations);\n\n  return (\n    <motion.svg\n      xmlns=\"http://www.w3.org/2000/svg\"\n      width={size}\n      height={size}\n      viewBox=\"0 0 24 24\"\n      fill=\"none\"\n      stroke=\"currentColor\"\n      strokeWidth={2}\n      strokeLinecap=\"round\"\n      strokeLinejoin=\"round\"\n      initial=\"initial\"\n      animate={controls}\n      {...props}\n    >\n      <motion.g variants={variants.glass} initial=\"initial\" animate={controls}>\n        <motion.circle\n          cx=\"11\"\n          cy=\"11\"\n          r=\"8\"\n          variants={variants.part}\n          initial=\"initial\"\n          animate={controls}\n        />\n        <motion.line\n          x1=\"11\"\n          x2=\"11\"\n          y1=\"8\"\n          y2=\"14\"\n          variants={variants.part}\n          initial=\"initial\"\n          animate={controls}\n        />\n        <motion.line\n          x1=\"8\"\n          x2=\"14\"\n          y1=\"11\"\n          y2=\"11\"\n          variants={variants.part}\n          initial=\"initial\"\n          animate={controls}\n        />\n      </motion.g>\n      <motion.line\n        x1=\"21\"\n        x2=\"16.65\"\n        y1=\"21\"\n        y2=\"16.65\"\n        variants={variants.handle}\n        initial=\"initial\"\n        animate={controls}\n      />\n    </motion.svg>\n  );\n}\n\nfunction ZoomIn(props: ZoomInProps) {\n  return <IconWrapper icon={IconComponent} {...props} />;\n}\n\nexport {\n  animations,\n  ZoomIn,\n  ZoomIn as ZoomInIcon,\n  type ZoomInProps,\n  type ZoomInProps as ZoomInIconProps,\n};\n",
+      "type": "registry:ui",
+      "target": "components/animate-ui/icons/zoom-in.tsx"
+    }
+  ],
+  "meta": {
+    "keywords": [
+      "magnifying glass",
+      "plus"
+    ]
+  },
+  "type": "registry:ui"
+}

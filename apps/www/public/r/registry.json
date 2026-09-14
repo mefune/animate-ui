@@ -6799,6 +6799,224 @@
       }
     },
     {
+      "name": "icons-align-center-horizontal",
+      "type": "registry:ui",
+      "title": "Align Center Horizontal Icon",
+      "description": "Align Center Horizontal icon component.",
+      "registryDependencies": [
+        "@animate-ui/icons-icon"
+      ],
+      "dependencies": [
+        "motion"
+      ],
+      "files": [
+        {
+          "path": "registry/icons/align-center-horizontal/index.tsx",
+          "type": "registry:ui",
+          "target": "components/animate-ui/icons/align-center-horizontal.tsx"
+        }
+      ],
+      "meta": {
+        "keywords": [
+          "items",
+          "flex",
+          "justify"
+        ]
+      }
+    },
+    {
+      "name": "icons-align-center-vertical",
+      "type": "registry:ui",
+      "title": "Align Center Vertical Icon",
+      "description": "Align Center Vertical icon component.",
+      "registryDependencies": [
+        "@animate-ui/icons-icon"
+      ],
+      "dependencies": [
+        "motion"
+      ],
+      "files": [
+        {
+          "path": "registry/icons/align-center-vertical/index.tsx",
+          "type": "registry:ui",
+          "target": "components/animate-ui/icons/align-center-vertical.tsx"
+        }
+      ],
+      "meta": {
+        "keywords": [
+          "items",
+          "flex",
+          "justify"
+        ]
+      }
+    },
+    {
+      "name": "icons-align-end-horizontal",
+      "type": "registry:ui",
+      "title": "Align End Horizontal Icon",
+      "description": "Align End Horizontal icon component.",
+      "registryDependencies": [
+        "@animate-ui/icons-icon"
+      ],
+      "dependencies": [
+        "motion"
+      ],
+      "files": [
+        {
+          "path": "registry/icons/align-end-horizontal/index.tsx",
+          "type": "registry:ui",
+          "target": "components/animate-ui/icons/align-end-horizontal.tsx"
+        }
+      ],
+      "meta": {
+        "keywords": [
+          "items",
+          "bottom",
+          "flex",
+          "justify"
+        ]
+      }
+    },
+    {
+      "name": "icons-align-end-vertical",
+      "type": "registry:ui",
+      "title": "Align End Vertical Icon",
+      "description": "Align End Vertical icon component.",
+      "registryDependencies": [
+        "@animate-ui/icons-icon"
+      ],
+      "dependencies": [
+        "motion"
+      ],
+      "files": [
+        {
+          "path": "registry/icons/align-end-vertical/index.tsx",
+          "type": "registry:ui",
+          "target": "components/animate-ui/icons/align-end-vertical.tsx"
+        }
+      ],
+      "meta": {
+        "keywords": [
+          "items",
+          "right",
+          "flex",
+          "justify"
+        ]
+      }
+    },
+    {
+      "name": "icons-align-horizontal-distribute-center",
+      "type": "registry:ui",
+      "title": "Align Horizontal Distribute Center Icon",
+      "description": "Align Horizontal Distribute Center icon component.",
+      "registryDependencies": [
+        "@animate-ui/icons-icon"
+      ],
+      "dependencies": [
+        "motion"
+      ],
+      "files": [
+        {
+          "path": "registry/icons/align-horizontal-distribute-center/index.tsx",
+          "type": "registry:ui",
+          "target": "components/animate-ui/icons/align-horizontal-distribute-center.tsx"
+        }
+      ],
+      "meta": {
+        "keywords": [
+          "items",
+          "flex",
+          "justify",
+          "space",
+          "evenly",
+          "around"
+        ]
+      }
+    },
+    {
+      "name": "icons-align-start-horizontal",
+      "type": "registry:ui",
+      "title": "Align Start Horizontal Icon",
+      "description": "Align Start Horizontal icon component.",
+      "registryDependencies": [
+        "@animate-ui/icons-icon"
+      ],
+      "dependencies": [
+        "motion"
+      ],
+      "files": [
+        {
+          "path": "registry/icons/align-start-horizontal/index.tsx",
+          "type": "registry:ui",
+          "target": "components/animate-ui/icons/align-start-horizontal.tsx"
+        }
+      ],
+      "meta": {
+        "keywords": [
+          "top",
+          "items",
+          "flex",
+          "justify"
+        ]
+      }
+    },
+    {
+      "name": "icons-align-start-vertical",
+      "type": "registry:ui",
+      "title": "Align Start Vertical Icon",
+      "description": "Align Start Vertical icon component.",
+      "registryDependencies": [
+        "@animate-ui/icons-icon"
+      ],
+      "dependencies": [
+        "motion"
+      ],
+      "files": [
+        {
+          "path": "registry/icons/align-start-vertical/index.tsx",
+          "type": "registry:ui",
+          "target": "components/animate-ui/icons/align-start-vertical.tsx"
+        }
+      ],
+      "meta": {
+        "keywords": [
+          "left",
+          "items",
+          "flex",
+          "justify"
+        ]
+      }
+    },
+    {
+      "name": "icons-align-vertical-distribute-center",
+      "type": "registry:ui",
+      "title": "Align Vertical Distribute Center Icon",
+      "description": "Align Vertical Distribute Center icon component.",
+      "registryDependencies": [
+        "@animate-ui/icons-icon"
+      ],
+      "dependencies": [
+        "motion"
+      ],
+      "files": [
+        {
+          "path": "registry/icons/align-vertical-distribute-center/index.tsx",
+          "type": "registry:ui",
+          "target": "components/animate-ui/icons/align-vertical-distribute-center.tsx"
+        }
+      ],
+      "meta": {
+        "keywords": [
+          "items",
+          "flex",
+          "justify",
+          "space",
+          "evenly",
+          "around"
+        ]
+      }
+    },
+    {
       "name": "icons-arrow-down",
       "type": "registry:ui",
       "title": "Arrow Down Icon",
@@ -7558,6 +7776,113 @@
       }
     },
     {
+      "name": "icons-book",
+      "type": "registry:ui",
+      "title": "Book Icon",
+      "description": "Book icon component.",
+      "registryDependencies": [
+        "@animate-ui/icons-icon"
+      ],
+      "dependencies": [
+        "motion"
+      ],
+      "files": [
+        {
+          "path": "registry/icons/book/index.tsx",
+          "type": "registry:ui",
+          "target": "components/animate-ui/icons/book.tsx"
+        }
+      ],
+      "meta": {
+        "keywords": [
+          "reading",
+          "paperback",
+          "booklet",
+          "magazine",
+          "leaflet",
+          "pamphlet",
+          "tome",
+          "library",
+          "writing",
+          "written",
+          "writer",
+          "author",
+          "story",
+          "script",
+          "fiction",
+          "novel",
+          "information",
+          "knowledge",
+          "education",
+          "high school",
+          "university",
+          "college",
+          "academy",
+          "student",
+          "study",
+          "learning",
+          "homework",
+          "research",
+          "documentation"
+        ]
+      }
+    },
+    {
+      "name": "icons-book-open",
+      "type": "registry:ui",
+      "title": "Book Open Icon",
+      "description": "Book Open icon component.",
+      "registryDependencies": [
+        "@animate-ui/icons-icon"
+      ],
+      "dependencies": [
+        "motion"
+      ],
+      "files": [
+        {
+          "path": "registry/icons/book-open/index.tsx",
+          "type": "registry:ui",
+          "target": "components/animate-ui/icons/book-open.tsx"
+        }
+      ],
+      "meta": {
+        "keywords": [
+          "reading",
+          "pages",
+          "booklet",
+          "magazine",
+          "leaflet",
+          "pamphlet",
+          "library",
+          "writing",
+          "written",
+          "writer",
+          "author",
+          "story",
+          "script",
+          "screenplay",
+          "fiction",
+          "novel",
+          "information",
+          "knowledge",
+          "education",
+          "high school",
+          "university",
+          "college",
+          "academy",
+          "student",
+          "study",
+          "learning",
+          "homework",
+          "research",
+          "documentation",
+          "revealed",
+          "blank",
+          "plain"
+        ]
+      }
+    },
+    {
       "name": "icons-bot",
       "type": "registry:ui",
       "title": "Bot Icon",
@@ -7720,6 +8045,70 @@
           "erase",
           "purge",
           "eliminate"
+        ]
+      }
+    },
+    {
+      "name": "icons-calendar",
+      "type": "registry:ui",
+      "title": "Calendar Icon",
+      "description": "Calendar icon component.",
+      "registryDependencies": [
+        "@animate-ui/icons-icon"
+      ],
+      "dependencies": [
+        "motion"
+      ],
+      "files": [
+        {
+          "path": "registry/icons/calendar/index.tsx",
+          "type": "registry:ui",
+          "target": "components/animate-ui/icons/calendar.tsx"
+        }
+      ],
+      "meta": {
+        "keywords": [
+          "date",
+          "month",
+          "year",
+          "event",
+          "birthday",
+          "birthdate"
+        ]
+      }
+    },
+    {
+      "name": "icons-camera",
+      "type": "registry:ui",
+      "title": "Camera Icon",
+      "description": "Camera icon component.",
+      "registryDependencies": [
+        "@animate-ui/icons-icon"
+      ],
+      "dependencies": [
+        "motion"
+      ],
+      "files": [
+        {
+          "path": "registry/icons/camera/index.tsx",
+          "type": "registry:ui",
+          "target": "components/animate-ui/icons/camera.tsx"
+        }
+      ],
+      "meta": {
+        "keywords": [
+          "photography",
+          "lens",
+          "focus",
+          "capture",
+          "shot",
+          "visual",
+          "image",
+          "device",
+          "equipment",
+          "photo",
+          "webcam",
+          "video"
         ]
       }
     },
@@ -8403,6 +8792,33 @@
           "expand",
           "vertical",
           "unfold"
+        ]
+      }
+    },
+    {
+      "name": "icons-circle-alert",
+      "type": "registry:ui",
+      "title": "Circle Alert Icon",
+      "description": "Circle Alert icon component.",
+      "registryDependencies": [
+        "@animate-ui/icons-icon"
+      ],
+      "dependencies": [
+        "motion"
+      ],
+      "files": [
+        {
+          "path": "registry/icons/circle-alert/index.tsx",
+          "type": "registry:ui",
+          "target": "components/animate-ui/icons/circle-alert.tsx"
+        }
+      ],
+      "meta": {
+        "keywords": [
+          "warning",
+          "alert",
+          "danger",
+          "exclamation mark"
         ]
       }
     },
@@ -9758,6 +10174,73 @@
       }
     },
     {
+      "name": "icons-eye",
+      "type": "registry:ui",
+      "title": "Eye Icon",
+      "description": "Eye icon component.",
+      "registryDependencies": [
+        "@animate-ui/icons-icon"
+      ],
+      "dependencies": [
+        "motion"
+      ],
+      "files": [
+        {
+          "path": "registry/icons/eye/index.tsx",
+          "type": "registry:ui",
+          "target": "components/animate-ui/icons/eye.tsx"
+        }
+      ],
+      "meta": {
+        "keywords": [
+          "view",
+          "watch",
+          "see",
+          "show",
+          "expose",
+          "reveal",
+          "display",
+          "visible",
+          "visibility",
+          "vision",
+          "preview",
+          "read"
+        ]
+      }
+    },
+    {
+      "name": "icons-eye-off",
+      "type": "registry:ui",
+      "title": "Eye Off Icon",
+      "description": "Eye Off icon component.",
+      "registryDependencies": [
+        "@animate-ui/icons-icon"
+      ],
+      "dependencies": [
+        "motion"
+      ],
+      "files": [
+        {
+          "path": "registry/icons/eye-off/index.tsx",
+          "type": "registry:ui",
+          "target": "components/animate-ui/icons/eye-off.tsx"
+        }
+      ],
+      "meta": {
+        "keywords": [
+          "view",
+          "watch",
+          "see",
+          "hide",
+          "conceal",
+          "mask",
+          "hidden",
+          "visibility",
+          "vision"
+        ]
+      }
+    },
+    {
       "name": "icons-fan",
       "type": "registry:ui",
       "title": "Fan Icon",
@@ -9786,6 +10269,57 @@
       }
     },
     {
+      "name": "icons-file",
+      "type": "registry:ui",
+      "title": "File Icon",
+      "description": "File icon component.",
+      "registryDependencies": [
+        "@animate-ui/icons-icon"
+      ],
+      "dependencies": [
+        "motion"
+      ],
+      "files": [
+        {
+          "path": "registry/icons/file/index.tsx",
+          "type": "registry:ui",
+          "target": "components/animate-ui/icons/file.tsx"
+        }
+      ],
+      "meta": {
+        "keywords": [
+          "document"
+        ]
+      }
+    },
+    {
+      "name": "icons-file-text",
+      "type": "registry:ui",
+      "title": "File Text Icon",
+      "description": "File Text icon component.",
+      "registryDependencies": [
+        "@animate-ui/icons-icon"
+      ],
+      "dependencies": [
+        "motion"
+      ],
+      "files": [
+        {
+          "path": "registry/icons/file-text/index.tsx",
+          "type": "registry:ui",
+          "target": "components/animate-ui/icons/file-text.tsx"
+        }
+      ],
+      "meta": {
+        "keywords": [
+          "data",
+          "txt",
+          "pdf",
+          "document"
+        ]
+      }
+    },
+    {
       "name": "icons-fingerprint",
       "type": "registry:ui",
       "title": "Fingerprint Icon",
@@ -9810,6 +10344,30 @@
           "biometric",
           "identity",
           "security"
+        ]
+      }
+    },
+    {
+      "name": "icons-folder",
+      "type": "registry:ui",
+      "title": "Folder Icon",
+      "description": "Folder icon component.",
+      "registryDependencies": [
+        "@animate-ui/icons-icon"
+      ],
+      "dependencies": [
+        "motion"
+      ],
+      "files": [
+        {
+          "path": "registry/icons/folder/index.tsx",
+          "type": "registry:ui",
+          "target": "components/animate-ui/icons/folder.tsx"
+        }
+      ],
+      "meta": {
+        "keywords": [
+          "directory"
         ]
       }
     },
@@ -10037,6 +10595,143 @@
       }
     },
     {
+      "name": "icons-ghost",
+      "type": "registry:ui",
+      "title": "Ghost Icon",
+      "description": "Ghost icon component.",
+      "registryDependencies": [
+        "@animate-ui/icons-icon"
+      ],
+      "dependencies": [
+        "motion"
+      ],
+      "files": [
+        {
+          "path": "registry/icons/ghost/index.tsx",
+          "type": "registry:ui",
+          "target": "components/animate-ui/icons/ghost.tsx"
+        }
+      ],
+      "meta": {
+        "keywords": [
+          "spirit",
+          "haunt",
+          "specter",
+          "apparition",
+          "wraith",
+          "shade",
+          "phantom",
+          "entity",
+          "shadow",
+          "silhouette",
+          "pac-man",
+          "spooky",
+          "halloween",
+          "haunted",
+          "invisible",
+          "hidden",
+          "empty",
+          "dead",
+          "obsolete",
+          "outdated"
+        ]
+      }
+    },
+    {
+      "name": "icons-globe",
+      "type": "registry:ui",
+      "title": "Globe Icon",
+      "description": "Globe icon component.",
+      "registryDependencies": [
+        "@animate-ui/icons-icon"
+      ],
+      "dependencies": [
+        "motion"
+      ],
+      "files": [
+        {
+          "path": "registry/icons/globe/index.tsx",
+          "type": "registry:ui",
+          "target": "components/animate-ui/icons/globe.tsx"
+        }
+      ],
+      "meta": {
+        "keywords": [
+          "world",
+          "browser",
+          "language",
+          "translate"
+        ]
+      }
+    },
+    {
+      "name": "icons-graduation-cap",
+      "type": "registry:ui",
+      "title": "Graduation Cap Icon",
+      "description": "Graduation Cap icon component.",
+      "registryDependencies": [
+        "@animate-ui/icons-icon"
+      ],
+      "dependencies": [
+        "motion"
+      ],
+      "files": [
+        {
+          "path": "registry/icons/graduation-cap/index.tsx",
+          "type": "registry:ui",
+          "target": "components/animate-ui/icons/graduation-cap.tsx"
+        }
+      ],
+      "meta": {
+        "keywords": [
+          "school",
+          "university",
+          "learn",
+          "study",
+          "mortarboard",
+          "education",
+          "ceremony",
+          "academic",
+          "hat",
+          "diploma",
+          "bachelor's",
+          "master's",
+          "doctorate"
+        ]
+      }
+    },
+    {
+      "name": "icons-group",
+      "type": "registry:ui",
+      "title": "Group Icon",
+      "description": "Group icon component.",
+      "registryDependencies": [
+        "@animate-ui/icons-icon"
+      ],
+      "dependencies": [
+        "motion"
+      ],
+      "files": [
+        {
+          "path": "registry/icons/group/index.tsx",
+          "type": "registry:ui",
+          "target": "components/animate-ui/icons/group.tsx"
+        }
+      ],
+      "meta": {
+        "keywords": [
+          "cubes",
+          "packages",
+          "parts",
+          "units",
+          "collection",
+          "cluster",
+          "gather",
+          "dashed"
+        ]
+      }
+    },
+    {
       "name": "icons-hammer",
       "type": "registry:ui",
       "title": "Hammer Icon",
@@ -10141,6 +10836,67 @@
           "target": "components/animate-ui/icons/icon.tsx"
         }
       ]
+    },
+    {
+      "name": "icons-image",
+      "type": "registry:ui",
+      "title": "Image Icon",
+      "description": "Image icon component.",
+      "registryDependencies": [
+        "@animate-ui/icons-icon"
+      ],
+      "dependencies": [
+        "motion"
+      ],
+      "files": [
+        {
+          "path": "registry/icons/image/index.tsx",
+          "type": "registry:ui",
+          "target": "components/animate-ui/icons/image.tsx"
+        }
+      ],
+      "meta": {
+        "keywords": [
+          "picture",
+          "photo"
+        ]
+      }
+    },
+    {
+      "name": "icons-info",
+      "type": "registry:ui",
+      "title": "Info Icon",
+      "description": "Info icon component.",
+      "registryDependencies": [
+        "@animate-ui/icons-icon"
+      ],
+      "dependencies": [
+        "motion"
+      ],
+      "files": [
+        {
+          "path": "registry/icons/info/index.tsx",
+          "type": "registry:ui",
+          "target": "components/animate-ui/icons/info.tsx"
+        }
+      ],
+      "meta": {
+        "keywords": [
+          "about",
+          "advice",
+          "clue",
+          "details",
+          "help",
+          "hint",
+          "indicator",
+          "information",
+          "knowledge",
+          "notice",
+          "status",
+          "support",
+          "tooltip"
+        ]
+      }
     },
     {
       "name": "icons-kanban",
@@ -10674,6 +11430,60 @@
           "arrow",
           "exit",
           "auth"
+        ]
+      }
+    },
+    {
+      "name": "icons-mail",
+      "type": "registry:ui",
+      "title": "Mail Icon",
+      "description": "Mail icon component.",
+      "registryDependencies": [
+        "@animate-ui/icons-icon"
+      ],
+      "dependencies": [
+        "motion"
+      ],
+      "files": [
+        {
+          "path": "registry/icons/mail/index.tsx",
+          "type": "registry:ui",
+          "target": "components/animate-ui/icons/mail.tsx"
+        }
+      ],
+      "meta": {
+        "keywords": [
+          "email",
+          "message",
+          "letter",
+          "unread"
+        ]
+      }
+    },
+    {
+      "name": "icons-mail-open",
+      "type": "registry:ui",
+      "title": "Mail Open Icon",
+      "description": "Mail Open icon component.",
+      "registryDependencies": [
+        "@animate-ui/icons-icon"
+      ],
+      "dependencies": [
+        "motion"
+      ],
+      "files": [
+        {
+          "path": "registry/icons/mail-open/index.tsx",
+          "type": "registry:ui",
+          "target": "components/animate-ui/icons/mail-open.tsx"
+        }
+      ],
+      "meta": {
+        "keywords": [
+          "email",
+          "message",
+          "letter",
+          "read"
         ]
       }
     },
@@ -11614,6 +12424,51 @@
       }
     },
     {
+      "name": "icons-minus",
+      "type": "registry:ui",
+      "title": "Minus Icon",
+      "description": "Minus icon component.",
+      "registryDependencies": [
+        "@animate-ui/icons-icon"
+      ],
+      "dependencies": [
+        "motion"
+      ],
+      "files": [
+        {
+          "path": "registry/icons/minus/index.tsx",
+          "type": "registry:ui",
+          "target": "components/animate-ui/icons/minus.tsx"
+        }
+      ],
+      "meta": {
+        "keywords": [
+          "subtract",
+          "remove",
+          "decrease",
+          "decrement",
+          "reduce",
+          "negative",
+          "calculate",
+          "line",
+          "divider",
+          "separator",
+          "horizontal rule",
+          "hr",
+          "html",
+          "markup",
+          "markdown",
+          "---",
+          "toolbar",
+          "operator",
+          "code",
+          "coding",
+          "minimum",
+          "downgrade"
+        ]
+      }
+    },
+    {
       "name": "icons-moon",
       "type": "registry:ui",
       "title": "Moon Icon",
@@ -11866,6 +12721,37 @@
           "colour",
           "decoration",
           "diy"
+        ]
+      }
+    },
+    {
+      "name": "icons-palette",
+      "type": "registry:ui",
+      "title": "Palette Icon",
+      "description": "Palette icon component.",
+      "registryDependencies": [
+        "@animate-ui/icons-icon"
+      ],
+      "dependencies": [
+        "motion"
+      ],
+      "files": [
+        {
+          "path": "registry/icons/palette/index.tsx",
+          "type": "registry:ui",
+          "target": "components/animate-ui/icons/palette.tsx"
+        }
+      ],
+      "meta": {
+        "keywords": [
+          "colors",
+          "colours",
+          "theme",
+          "scheme",
+          "paint",
+          "watercolor",
+          "watercolour",
+          "artist"
         ]
       }
     },
@@ -12433,6 +13319,33 @@
       }
     },
     {
+      "name": "icons-pipette",
+      "type": "registry:ui",
+      "title": "Pipette Icon",
+      "description": "Pipette icon component.",
+      "registryDependencies": [
+        "@animate-ui/icons-icon"
+      ],
+      "dependencies": [
+        "motion"
+      ],
+      "files": [
+        {
+          "path": "registry/icons/pipette/index.tsx",
+          "type": "registry:ui",
+          "target": "components/animate-ui/icons/pipette.tsx"
+        }
+      ],
+      "meta": {
+        "keywords": [
+          "eye dropper",
+          "color picker",
+          "lab",
+          "chemistry"
+        ]
+      }
+    },
+    {
       "name": "icons-play",
       "type": "registry:ui",
       "title": "Play Icon",
@@ -12579,6 +13492,32 @@
           "airwaves",
           "frequency",
           "live"
+        ]
+      }
+    },
+    {
+      "name": "icons-redo-2",
+      "type": "registry:ui",
+      "title": "Redo 2 Icon",
+      "description": "Redo 2 icon component.",
+      "registryDependencies": [
+        "@animate-ui/icons-icon"
+      ],
+      "dependencies": [
+        "motion"
+      ],
+      "files": [
+        {
+          "path": "registry/icons/redo-2/index.tsx",
+          "type": "registry:ui",
+          "target": "components/animate-ui/icons/redo-2.tsx"
+        }
+      ],
+      "meta": {
+        "keywords": [
+          "undo",
+          "rerun",
+          "history"
         ]
       }
     },
@@ -12923,6 +13862,41 @@
       }
     },
     {
+      "name": "icons-scroll",
+      "type": "registry:ui",
+      "title": "Scroll Icon",
+      "description": "Scroll icon component.",
+      "registryDependencies": [
+        "@animate-ui/icons-icon"
+      ],
+      "dependencies": [
+        "motion"
+      ],
+      "files": [
+        {
+          "path": "registry/icons/scroll/index.tsx",
+          "type": "registry:ui",
+          "target": "components/animate-ui/icons/scroll.tsx"
+        }
+      ],
+      "meta": {
+        "keywords": [
+          "paper",
+          "log",
+          "scripture",
+          "document",
+          "notes",
+          "parchment",
+          "list",
+          "long",
+          "script",
+          "story",
+          "code",
+          "coding"
+        ]
+      }
+    },
+    {
       "name": "icons-search",
       "type": "registry:ui",
       "title": "Search Icon",
@@ -13032,6 +14006,82 @@
           "edit",
           "gear",
           "preferences"
+        ]
+      }
+    },
+    {
+      "name": "icons-shield-check",
+      "type": "registry:ui",
+      "title": "Shield Check Icon",
+      "description": "Shield Check icon component.",
+      "registryDependencies": [
+        "@animate-ui/icons-icon"
+      ],
+      "dependencies": [
+        "motion"
+      ],
+      "files": [
+        {
+          "path": "registry/icons/shield-check/index.tsx",
+          "type": "registry:ui",
+          "target": "components/animate-ui/icons/shield-check.tsx"
+        }
+      ],
+      "meta": {
+        "keywords": [
+          "cybersecurity",
+          "secured",
+          "safety",
+          "protection",
+          "protected",
+          "guardian",
+          "guarded",
+          "armored",
+          "armoured",
+          "defense",
+          "defence",
+          "defended",
+          "blocked",
+          "threat",
+          "prevention",
+          "prevented",
+          "antivirus",
+          "vigilance",
+          "vigilant",
+          "active",
+          "activated",
+          "enabled",
+          "detection",
+          "scanned",
+          "found",
+          "strength",
+          "strong",
+          "tough",
+          "invincible",
+          "invincibility",
+          "invulnerable",
+          "undamaged",
+          "audited",
+          "admin",
+          "verification",
+          "verified",
+          "certification",
+          "certified",
+          "tested",
+          "passed",
+          "qualified",
+          "cleared",
+          "cleaned",
+          "disinfected",
+          "uninfected",
+          "task",
+          "completed",
+          "todo",
+          "done",
+          "ticked",
+          "checked",
+          "crest",
+          "bravery"
         ]
       }
     },
@@ -13266,6 +14316,38 @@
         "keywords": [
           "settings",
           "controls"
+        ]
+      }
+    },
+    {
+      "name": "icons-smartphone",
+      "type": "registry:ui",
+      "title": "Smartphone Icon",
+      "description": "Smartphone icon component.",
+      "registryDependencies": [
+        "@animate-ui/icons-icon"
+      ],
+      "dependencies": [
+        "motion"
+      ],
+      "files": [
+        {
+          "path": "registry/icons/smartphone/index.tsx",
+          "type": "registry:ui",
+          "target": "components/animate-ui/icons/smartphone.tsx"
+        }
+      ],
+      "meta": {
+        "keywords": [
+          "phone",
+          "cellphone",
+          "device",
+          "mobile",
+          "screen",
+          "display",
+          "touchscreen",
+          "portable",
+          "responsive"
         ]
       }
     },
@@ -13964,6 +15046,147 @@
       }
     },
     {
+      "name": "icons-triangle-alert",
+      "type": "registry:ui",
+      "title": "Triangle Alert Icon",
+      "description": "Triangle Alert icon component.",
+      "registryDependencies": [
+        "@animate-ui/icons-icon"
+      ],
+      "dependencies": [
+        "motion"
+      ],
+      "files": [
+        {
+          "path": "registry/icons/triangle-alert/index.tsx",
+          "type": "registry:ui",
+          "target": "components/animate-ui/icons/triangle-alert.tsx"
+        }
+      ],
+      "meta": {
+        "keywords": [
+          "warning",
+          "alert",
+          "danger",
+          "exclamation mark",
+          "linter"
+        ]
+      }
+    },
+    {
+      "name": "icons-type",
+      "type": "registry:ui",
+      "title": "Type Icon",
+      "description": "Type icon component.",
+      "registryDependencies": [
+        "@animate-ui/icons-icon"
+      ],
+      "dependencies": [
+        "motion"
+      ],
+      "files": [
+        {
+          "path": "registry/icons/type/index.tsx",
+          "type": "registry:ui",
+          "target": "components/animate-ui/icons/type.tsx"
+        }
+      ],
+      "meta": {
+        "keywords": [
+          "text",
+          "font",
+          "typography"
+        ]
+      }
+    },
+    {
+      "name": "icons-undo-2",
+      "type": "registry:ui",
+      "title": "Undo 2 Icon",
+      "description": "Undo 2 icon component.",
+      "registryDependencies": [
+        "@animate-ui/icons-icon"
+      ],
+      "dependencies": [
+        "motion"
+      ],
+      "files": [
+        {
+          "path": "registry/icons/undo-2/index.tsx",
+          "type": "registry:ui",
+          "target": "components/animate-ui/icons/undo-2.tsx"
+        }
+      ],
+      "meta": {
+        "keywords": [
+          "redo",
+          "rerun",
+          "history",
+          "back",
+          "return",
+          "reverse",
+          "revert",
+          "direction",
+          "u-turn"
+        ]
+      }
+    },
+    {
+      "name": "icons-ungroup",
+      "type": "registry:ui",
+      "title": "Ungroup Icon",
+      "description": "Ungroup icon component.",
+      "registryDependencies": [
+        "@animate-ui/icons-icon"
+      ],
+      "dependencies": [
+        "motion"
+      ],
+      "files": [
+        {
+          "path": "registry/icons/ungroup/index.tsx",
+          "type": "registry:ui",
+          "target": "components/animate-ui/icons/ungroup.tsx"
+        }
+      ],
+      "meta": {
+        "keywords": [
+          "cubes",
+          "packages",
+          "parts",
+          "units",
+          "collection",
+          "cluster",
+          "separate"
+        ]
+      }
+    },
+    {
+      "name": "icons-unlink-2",
+      "type": "registry:ui",
+      "title": "Unlink 2 Icon",
+      "description": "Unlink 2 icon component.",
+      "registryDependencies": [
+        "@animate-ui/icons-icon"
+      ],
+      "dependencies": [
+        "motion"
+      ],
+      "files": [
+        {
+          "path": "registry/icons/unlink-2/index.tsx",
+          "type": "registry:ui",
+          "target": "components/animate-ui/icons/unlink-2.tsx"
+        }
+      ],
+      "meta": {
+        "keywords": [
+          "url",
+          "unchain"
+        ]
+      }
+    },
+    {
       "name": "icons-unplug",
       "type": "registry:ui",
       "title": "Unplug Icon",
@@ -14331,6 +15554,56 @@
           "math",
           "multiply",
           "multiplication"
+        ]
+      }
+    },
+    {
+      "name": "icons-zoom-in",
+      "type": "registry:ui",
+      "title": "Zoom In Icon",
+      "description": "Zoom In icon component.",
+      "registryDependencies": [
+        "@animate-ui/icons-icon"
+      ],
+      "dependencies": [
+        "motion"
+      ],
+      "files": [
+        {
+          "path": "registry/icons/zoom-in/index.tsx",
+          "type": "registry:ui",
+          "target": "components/animate-ui/icons/zoom-in.tsx"
+        }
+      ],
+      "meta": {
+        "keywords": [
+          "magnifying glass",
+          "plus"
+        ]
+      }
+    },
+    {
+      "name": "icons-zoom-out",
+      "type": "registry:ui",
+      "title": "Zoom Out Icon",
+      "description": "Zoom Out icon component.",
+      "registryDependencies": [
+        "@animate-ui/icons-icon"
+      ],
+      "dependencies": [
+        "motion"
+      ],
+      "files": [
+        {
+          "path": "registry/icons/zoom-out/index.tsx",
+          "type": "registry:ui",
+          "target": "components/animate-ui/icons/zoom-out.tsx"
+        }
+      ],
+      "meta": {
+        "keywords": [
+          "magnifying glass",
+          "plus"
         ]
       }
     },

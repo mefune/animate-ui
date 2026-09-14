@@ -1,0 +1,37 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "icons-info",
+  "type": "registry:ui",
+  "title": "Info Icon",
+  "description": "Info icon component.",
+  "registryDependencies": [
+    "@animate-ui/icons-icon"
+  ],
+  "dependencies": [
+    "motion"
+  ],
+  "files": [
+    {
+      "path": "registry/icons/info/index.tsx",
+      "type": "registry:ui",
+      "target": "components/animate-ui/icons/info.tsx"
+    }
+  ],
+  "meta": {
+    "keywords": [
+      "about",
+      "advice",
+      "clue",
+      "details",
+      "help",
+      "hint",
+      "indicator",
+      "information",
+      "knowledge",
+      "notice",
+      "status",
+      "support",
+      "tooltip"
+    ]
+  }
+}

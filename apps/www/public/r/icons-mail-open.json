@@ -1,0 +1,29 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "icons-mail-open",
+  "title": "Mail Open Icon",
+  "description": "Mail Open icon component.",
+  "dependencies": [
+    "motion"
+  ],
+  "registryDependencies": [
+    "@animate-ui/icons-icon"
+  ],
+  "files": [
+    {
+      "path": "registry/icons/mail-open/index.tsx",
+      "content": "'use client';\n\nimport * as React from 'react';\nimport { motion, type Variants } from 'motion/react';\n\nimport {\n  getVariants,\n  useAnimateIconContext,\n  IconWrapper,\n  type IconProps,\n} from '@/components/animate-ui/icons/icon';\n\ntype MailOpenProps = IconProps<keyof typeof animations>;\n\nconst animations = {\n  default: {\n    body: {\n      initial: {\n        d: 'M21.2 8.4c.5 .38 .8 .97 .8 1.6v10a2 2 0 0 1 -2 2H4a2 2 0 0 1 -2 -2V10a2 2 0 0 1 .8 -1.6l8 -6a2 2 0 0 1 2.4 0l8 6Z',\n      },\n      animate: {\n        d: [\n          'M21.2 8.4c.5 .38 .8 .97 .8 1.6v10a2 2 0 0 1 -2 2H4a2 2 0 0 1 -2 -2V10a2 2 0 0 1 .8 -1.6l8 -6a2 2 0 0 1 2.4 0l8 6Z',\n          'M21.2 4.4c.5 .38 .8 .97 .8 1.6v12a2 2 0 0 1 -2 2H4a2 2 0 0 1 -2 -2V6a2 2 0 0 1 .8 -1.6l8 0a2 2 0 0 1 2.4 0l8 0Z',\n          'M21.2 4.4c.5 .38 .8 .97 .8 1.6v12a2 2 0 0 1 -2 2H4a2 2 0 0 1 -2 -2V6a2 2 0 0 1 .8 -1.6l8 0a2 2 0 0 1 2.4 0l8 0Z',\n          'M21.2 8.4c.5 .38 .8 .97 .8 1.6v10a2 2 0 0 1 -2 2H4a2 2 0 0 1 -2 -2V10a2 2 0 0 1 .8 -1.6l8 -6a2 2 0 0 1 2.4 0l8 6Z',\n        ],\n        transition: {\n          duration: 1.4,\n          times: [0, 0.3, 0.7, 1],\n          ease: 'easeInOut',\n        },\n      },\n    },\n    flap: {\n      initial: { d: 'm22 10 -8.97 5.7a1.94 1.94 0 0 1 -2.06 0L2 10' },\n      animate: {\n        d: [\n          'm22 10 -8.97 5.7a1.94 1.94 0 0 1 -2.06 0L2 10',\n          'm22 7 -8.97 5.7a1.94 1.94 0 0 1 -2.06 0L2 7',\n          'm22 7 -8.97 5.7a1.94 1.94 0 0 1 -2.06 0L2 7',\n          'm22 10 -8.97 5.7a1.94 1.94 0 0 1 -2.06 0L2 10',\n        ],\n        transition: {\n          duration: 1.4,\n          times: [0, 0.3, 0.7, 1],\n          ease: 'easeInOut',\n        },\n      },\n    },\n  } satisfies Record<string, Variants>,\n} as const;\n\nfunction IconComponent({ size, ...props }: MailOpenProps) {\n  const { controls } = useAnimateIconContext();\n  const variants = getVariants(animations);\n\n  return (\n    <motion.svg\n      xmlns=\"http://www.w3.org/2000/svg\"\n      width={size}\n      height={size}\n      viewBox=\"0 0 24 24\"\n      fill=\"none\"\n      stroke=\"currentColor\"\n      strokeWidth={2}\n      strokeLinecap=\"round\"\n      strokeLinejoin=\"round\"\n      initial=\"initial\"\n      animate={controls}\n      {...props}\n    >\n      <motion.path\n        d=\"M21.2 8.4c.5 .38 .8 .97 .8 1.6v10a2 2 0 0 1 -2 2H4a2 2 0 0 1 -2 -2V10a2 2 0 0 1 .8 -1.6l8 -6a2 2 0 0 1 2.4 0l8 6Z\"\n        variants={variants.body}\n        initial=\"initial\"\n        animate={controls}\n      />\n      <motion.path\n        d=\"m22 10 -8.97 5.7a1.94 1.94 0 0 1 -2.06 0L2 10\"\n        variants={variants.flap}\n        initial=\"initial\"\n        animate={controls}\n      />\n    </motion.svg>\n  );\n}\n\nfunction MailOpen(props: MailOpenProps) {\n  return <IconWrapper icon={IconComponent} {...props} />;\n}\n\nexport {\n  animations,\n  MailOpen,\n  MailOpen as MailOpenIcon,\n  type MailOpenProps,\n  type MailOpenProps as MailOpenIconProps,\n};\n",
+      "type": "registry:ui",
+      "target": "components/animate-ui/icons/mail-open.tsx"
+    }
+  ],
+  "meta": {
+    "keywords": [
+      "email",
+      "message",
+      "letter",
+      "read"
+    ]
+  },
+  "type": "registry:ui"
+}

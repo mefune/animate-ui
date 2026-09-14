@@ -1,0 +1,33 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "icons-smartphone",
+  "type": "registry:ui",
+  "title": "Smartphone Icon",
+  "description": "Smartphone icon component.",
+  "registryDependencies": [
+    "@animate-ui/icons-icon"
+  ],
+  "dependencies": [
+    "motion"
+  ],
+  "files": [
+    {
+      "path": "registry/icons/smartphone/index.tsx",
+      "type": "registry:ui",
+      "target": "components/animate-ui/icons/smartphone.tsx"
+    }
+  ],
+  "meta": {
+    "keywords": [
+      "phone",
+      "cellphone",
+      "device",
+      "mobile",
+      "screen",
+      "display",
+      "touchscreen",
+      "portable",
+      "responsive"
+    ]
+  }
+}

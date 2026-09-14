@@ -1,0 +1,30 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "icons-triangle-alert",
+  "title": "Triangle Alert Icon",
+  "description": "Triangle Alert icon component.",
+  "dependencies": [
+    "motion"
+  ],
+  "registryDependencies": [
+    "@animate-ui/icons-icon"
+  ],
+  "files": [
+    {
+      "path": "registry/icons/triangle-alert/index.tsx",
+      "content": "'use client';\n\nimport * as React from 'react';\nimport { motion, type Variants } from 'motion/react';\n\nimport {\n  getVariants,\n  useAnimateIconContext,\n  IconWrapper,\n  type IconProps,\n} from '@/components/animate-ui/icons/icon';\n\ntype TriangleAlertProps = IconProps<keyof typeof animations>;\n\nconst animations = {\n  default: {\n    outline: {},\n    mark: {\n      initial: { opacity: 1 },\n      animate: {\n        opacity: [1, 0.15, 1, 0.15, 1],\n        transition: {\n          duration: 1.1,\n          times: [0, 0.2, 0.45, 0.7, 1],\n          ease: 'easeInOut',\n        },\n      },\n    },\n  } satisfies Record<string, Variants>,\n} as const;\n\nfunction IconComponent({ size, ...props }: TriangleAlertProps) {\n  const { controls } = useAnimateIconContext();\n  const variants = getVariants(animations);\n\n  return (\n    <motion.svg\n      xmlns=\"http://www.w3.org/2000/svg\"\n      width={size}\n      height={size}\n      viewBox=\"0 0 24 24\"\n      fill=\"none\"\n      stroke=\"currentColor\"\n      strokeWidth={2}\n      strokeLinecap=\"round\"\n      strokeLinejoin=\"round\"\n      initial=\"initial\"\n      animate={controls}\n      {...props}\n    >\n      <motion.path\n        d=\"m21.73 18-8-14a2 2 0 0 0-3.48 0l-8 14A2 2 0 0 0 4 21h16a2 2 0 0 0 1.73-3\"\n        variants={variants.outline}\n        initial=\"initial\"\n        animate={controls}\n      />\n      <motion.path\n        d=\"M12 9v4\"\n        variants={variants.mark}\n        initial=\"initial\"\n        animate={controls}\n      />\n      <motion.path\n        d=\"M12 17h.01\"\n        variants={variants.mark}\n        initial=\"initial\"\n        animate={controls}\n      />\n    </motion.svg>\n  );\n}\n\nfunction TriangleAlert(props: TriangleAlertProps) {\n  return <IconWrapper icon={IconComponent} {...props} />;\n}\n\nexport {\n  animations,\n  TriangleAlert,\n  TriangleAlert as TriangleAlertIcon,\n  type TriangleAlertProps,\n  type TriangleAlertProps as TriangleAlertIconProps,\n};\n",
+      "type": "registry:ui",
+      "target": "components/animate-ui/icons/triangle-alert.tsx"
+    }
+  ],
+  "meta": {
+    "keywords": [
+      "warning",
+      "alert",
+      "danger",
+      "exclamation mark",
+      "linter"
+    ]
+  },
+  "type": "registry:ui"
+}

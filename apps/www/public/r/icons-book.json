@@ -1,0 +1,54 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "icons-book",
+  "title": "Book Icon",
+  "description": "Book icon component.",
+  "dependencies": [
+    "motion"
+  ],
+  "registryDependencies": [
+    "@animate-ui/icons-icon"
+  ],
+  "files": [
+    {
+      "path": "registry/icons/book/index.tsx",
+      "content": "'use client';\n\nimport * as React from 'react';\nimport { motion, type Variants } from 'motion/react';\n\nimport {\n  getVariants,\n  useAnimateIconContext,\n  IconWrapper,\n  type IconProps,\n} from '@/components/animate-ui/icons/icon';\n\ntype BookProps = IconProps<keyof typeof animations>;\n\nconst animations = {\n  default: {\n    outline: {},\n    title1: {\n      initial: { pathLength: 1, opacity: 1 },\n      animate: {\n        pathLength: [0, 1],\n        opacity: [0, 1],\n        transition: { duration: 0.4, delay: 0.05, ease: 'easeOut' },\n      },\n    },\n    title2: {\n      initial: { pathLength: 1, opacity: 1 },\n      animate: {\n        pathLength: [0, 1],\n        opacity: [0, 1],\n        transition: { duration: 0.35, delay: 0.4, ease: 'easeOut' },\n      },\n    },\n  } satisfies Record<string, Variants>,\n} as const;\n\nfunction IconComponent({ size, ...props }: BookProps) {\n  const { controls } = useAnimateIconContext();\n  const variants = getVariants(animations);\n\n  return (\n    <motion.svg\n      xmlns=\"http://www.w3.org/2000/svg\"\n      width={size}\n      height={size}\n      viewBox=\"0 0 24 24\"\n      fill=\"none\"\n      stroke=\"currentColor\"\n      strokeWidth={2}\n      strokeLinecap=\"round\"\n      strokeLinejoin=\"round\"\n      initial=\"initial\"\n      animate={controls}\n      {...props}\n    >\n      <motion.path\n        d=\"M4 19.5v-15A2.5 2.5 0 0 1 6.5 2H19a1 1 0 0 1 1 1v18a1 1 0 0 1-1 1H6.5a1 1 0 0 1 0-5H20\"\n        variants={variants.outline}\n        initial=\"initial\"\n        animate={controls}\n      />\n      <motion.path\n        d=\"M9 7h7\"\n        variants={variants.title1}\n        initial=\"initial\"\n        animate={controls}\n      />\n      <motion.path\n        d=\"M9 10.5h4\"\n        variants={variants.title2}\n        initial=\"initial\"\n        animate={controls}\n      />\n    </motion.svg>\n  );\n}\n\nfunction Book(props: BookProps) {\n  return <IconWrapper icon={IconComponent} {...props} />;\n}\n\nexport {\n  animations,\n  Book,\n  Book as BookIcon,\n  type BookProps,\n  type BookProps as BookIconProps,\n};\n",
+      "type": "registry:ui",
+      "target": "components/animate-ui/icons/book.tsx"
+    }
+  ],
+  "meta": {
+    "keywords": [
+      "reading",
+      "paperback",
+      "booklet",
+      "magazine",
+      "leaflet",
+      "pamphlet",
+      "tome",
+      "library",
+      "writing",
+      "written",
+      "writer",
+      "author",
+      "story",
+      "script",
+      "fiction",
+      "novel",
+      "information",
+      "knowledge",
+      "education",
+      "high school",
+      "university",
+      "college",
+      "academy",
+      "student",
+      "study",
+      "learning",
+      "homework",
+      "research",
+      "documentation"
+    ]
+  },
+  "type": "registry:ui"
+}

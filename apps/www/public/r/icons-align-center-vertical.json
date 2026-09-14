@@ -1,0 +1,28 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "icons-align-center-vertical",
+  "title": "Align Center Vertical Icon",
+  "description": "Align Center Vertical icon component.",
+  "dependencies": [
+    "motion"
+  ],
+  "registryDependencies": [
+    "@animate-ui/icons-icon"
+  ],
+  "files": [
+    {
+      "path": "registry/icons/align-center-vertical/index.tsx",
+      "content": "'use client';\n\nimport * as React from 'react';\nimport { motion, type Variants } from 'motion/react';\n\nimport {\n  getVariants,\n  useAnimateIconContext,\n  IconWrapper,\n  type IconProps,\n} from '@/components/animate-ui/icons/icon';\n\ntype AlignCenterVerticalProps = IconProps<keyof typeof animations>;\n\nconst animations = {\n  default: {\n    edge: {},\n    b1: {\n      initial: { x: 0 },\n      animate: {\n        x: [0, 2, 0],\n        transition: { duration: 0.9, times: [0, 0.45, 1], ease: 'easeInOut' },\n      },\n    },\n    b2: {\n      initial: { x: 0 },\n      animate: {\n        x: [0, -2, 0],\n        transition: { duration: 0.9, times: [0, 0.45, 1], ease: 'easeInOut' },\n      },\n    },\n  } satisfies Record<string, Variants>,\n} as const;\n\nfunction IconComponent({ size, ...props }: AlignCenterVerticalProps) {\n  const { controls } = useAnimateIconContext();\n  const variants = getVariants(animations);\n\n  return (\n    <motion.svg\n      xmlns=\"http://www.w3.org/2000/svg\"\n      width={size}\n      height={size}\n      viewBox=\"0 0 24 24\"\n      fill=\"none\"\n      stroke=\"currentColor\"\n      strokeWidth={2}\n      strokeLinecap=\"round\"\n      strokeLinejoin=\"round\"\n      initial=\"initial\"\n      animate={controls}\n      {...props}\n    >\n      <motion.path\n        d=\"M12 2v20\"\n        variants={variants.edge}\n        initial=\"initial\"\n        animate={controls}\n      />\n      <motion.path\n        d=\"M8 10H4a2 2 0 0 1-2-2V6c0-1.1.9-2 2-2h4\"\n        variants={variants.b1}\n        initial=\"initial\"\n        animate={controls}\n      />\n      <motion.path\n        d=\"M16 10h4a2 2 0 0 0 2-2V6a2 2 0 0 0-2-2h-4\"\n        variants={variants.b1}\n        initial=\"initial\"\n        animate={controls}\n      />\n      <motion.path\n        d=\"M8 20H7a2 2 0 0 1-2-2v-2c0-1.1.9-2 2-2h1\"\n        variants={variants.b2}\n        initial=\"initial\"\n        animate={controls}\n      />\n      <motion.path\n        d=\"M16 14h1a2 2 0 0 1 2 2v2a2 2 0 0 1-2 2h-1\"\n        variants={variants.b2}\n        initial=\"initial\"\n        animate={controls}\n      />\n    </motion.svg>\n  );\n}\n\nfunction AlignCenterVertical(props: AlignCenterVerticalProps) {\n  return <IconWrapper icon={IconComponent} {...props} />;\n}\n\nexport {\n  animations,\n  AlignCenterVertical,\n  AlignCenterVertical as AlignCenterVerticalIcon,\n  type AlignCenterVerticalProps,\n  type AlignCenterVerticalProps as AlignCenterVerticalIconProps,\n};\n",
+      "type": "registry:ui",
+      "target": "components/animate-ui/icons/align-center-vertical.tsx"
+    }
+  ],
+  "meta": {
+    "keywords": [
+      "items",
+      "flex",
+      "justify"
+    ]
+  },
+  "type": "registry:ui"
+}

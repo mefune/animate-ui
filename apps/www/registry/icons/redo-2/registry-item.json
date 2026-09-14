@@ -1,0 +1,27 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "icons-redo-2",
+  "type": "registry:ui",
+  "title": "Redo 2 Icon",
+  "description": "Redo 2 icon component.",
+  "registryDependencies": [
+    "@animate-ui/icons-icon"
+  ],
+  "dependencies": [
+    "motion"
+  ],
+  "files": [
+    {
+      "path": "registry/icons/redo-2/index.tsx",
+      "type": "registry:ui",
+      "target": "components/animate-ui/icons/redo-2.tsx"
+    }
+  ],
+  "meta": {
+    "keywords": [
+      "undo",
+      "rerun",
+      "history"
+    ]
+  }
+}

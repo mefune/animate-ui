@@ -1,0 +1,28 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "icons-align-start-vertical",
+  "type": "registry:ui",
+  "title": "Align Start Vertical Icon",
+  "description": "Align Start Vertical icon component.",
+  "registryDependencies": [
+    "@animate-ui/icons-icon"
+  ],
+  "dependencies": [
+    "motion"
+  ],
+  "files": [
+    {
+      "path": "registry/icons/align-start-vertical/index.tsx",
+      "type": "registry:ui",
+      "target": "components/animate-ui/icons/align-start-vertical.tsx"
+    }
+  ],
+  "meta": {
+    "keywords": [
+      "left",
+      "items",
+      "flex",
+      "justify"
+    ]
+  }
+}

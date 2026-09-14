@@ -1,0 +1,36 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "icons-camera",
+  "type": "registry:ui",
+  "title": "Camera Icon",
+  "description": "Camera icon component.",
+  "registryDependencies": [
+    "@animate-ui/icons-icon"
+  ],
+  "dependencies": [
+    "motion"
+  ],
+  "files": [
+    {
+      "path": "registry/icons/camera/index.tsx",
+      "type": "registry:ui",
+      "target": "components/animate-ui/icons/camera.tsx"
+    }
+  ],
+  "meta": {
+    "keywords": [
+      "photography",
+      "lens",
+      "focus",
+      "capture",
+      "shot",
+      "visual",
+      "image",
+      "device",
+      "equipment",
+      "photo",
+      "webcam",
+      "video"
+    ]
+  }
+}

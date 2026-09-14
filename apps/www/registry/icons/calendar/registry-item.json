@@ -1,0 +1,30 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "icons-calendar",
+  "type": "registry:ui",
+  "title": "Calendar Icon",
+  "description": "Calendar icon component.",
+  "registryDependencies": [
+    "@animate-ui/icons-icon"
+  ],
+  "dependencies": [
+    "motion"
+  ],
+  "files": [
+    {
+      "path": "registry/icons/calendar/index.tsx",
+      "type": "registry:ui",
+      "target": "components/animate-ui/icons/calendar.tsx"
+    }
+  ],
+  "meta": {
+    "keywords": [
+      "date",
+      "month",
+      "year",
+      "event",
+      "birthday",
+      "birthdate"
+    ]
+  }
+}

@@ -1,0 +1,29 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "icons-align-end-vertical",
+  "title": "Align End Vertical Icon",
+  "description": "Align End Vertical icon component.",
+  "dependencies": [
+    "motion"
+  ],
+  "registryDependencies": [
+    "@animate-ui/icons-icon"
+  ],
+  "files": [
+    {
+      "path": "registry/icons/align-end-vertical/index.tsx",
+      "content": "'use client';\n\nimport * as React from 'react';\nimport { motion, type Variants } from 'motion/react';\n\nimport {\n  getVariants,\n  useAnimateIconContext,\n  IconWrapper,\n  type IconProps,\n} from '@/components/animate-ui/icons/icon';\n\ntype AlignEndVerticalProps = IconProps<keyof typeof animations>;\n\nconst animations = {\n  default: {\n    b1: {\n      initial: { x: 0 },\n      animate: {\n        x: [0, -2.5, 0],\n        transition: { duration: 0.9, times: [0, 0.45, 1], ease: 'easeInOut' },\n      },\n    },\n    b2: {\n      initial: { x: 0 },\n      animate: {\n        x: [0, 2.5, 0],\n        transition: { duration: 0.9, times: [0, 0.45, 1], ease: 'easeInOut' },\n      },\n    },\n    edge: {},\n  } satisfies Record<string, Variants>,\n} as const;\n\nfunction IconComponent({ size, ...props }: AlignEndVerticalProps) {\n  const { controls } = useAnimateIconContext();\n  const variants = getVariants(animations);\n\n  return (\n    <motion.svg\n      xmlns=\"http://www.w3.org/2000/svg\"\n      width={size}\n      height={size}\n      viewBox=\"0 0 24 24\"\n      fill=\"none\"\n      stroke=\"currentColor\"\n      strokeWidth={2}\n      strokeLinecap=\"round\"\n      strokeLinejoin=\"round\"\n      initial=\"initial\"\n      animate={controls}\n      {...props}\n    >\n      <motion.rect\n        width=\"16\"\n        height=\"6\"\n        x=\"2\"\n        y=\"4\"\n        rx=\"2\"\n        variants={variants.b1}\n        initial=\"initial\"\n        animate={controls}\n      />\n      <motion.rect\n        width=\"9\"\n        height=\"6\"\n        x=\"9\"\n        y=\"14\"\n        rx=\"2\"\n        variants={variants.b2}\n        initial=\"initial\"\n        animate={controls}\n      />\n      <motion.path\n        d=\"M22 22V2\"\n        variants={variants.edge}\n        initial=\"initial\"\n        animate={controls}\n      />\n    </motion.svg>\n  );\n}\n\nfunction AlignEndVertical(props: AlignEndVerticalProps) {\n  return <IconWrapper icon={IconComponent} {...props} />;\n}\n\nexport {\n  animations,\n  AlignEndVertical,\n  AlignEndVertical as AlignEndVerticalIcon,\n  type AlignEndVerticalProps,\n  type AlignEndVerticalProps as AlignEndVerticalIconProps,\n};\n",
+      "type": "registry:ui",
+      "target": "components/animate-ui/icons/align-end-vertical.tsx"
+    }
+  ],
+  "meta": {
+    "keywords": [
+      "items",
+      "right",
+      "flex",
+      "justify"
+    ]
+  },
+  "type": "registry:ui"
+}

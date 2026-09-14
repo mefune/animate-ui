@@ -1,0 +1,44 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "icons-ghost",
+  "type": "registry:ui",
+  "title": "Ghost Icon",
+  "description": "Ghost icon component.",
+  "registryDependencies": [
+    "@animate-ui/icons-icon"
+  ],
+  "dependencies": [
+    "motion"
+  ],
+  "files": [
+    {
+      "path": "registry/icons/ghost/index.tsx",
+      "type": "registry:ui",
+      "target": "components/animate-ui/icons/ghost.tsx"
+    }
+  ],
+  "meta": {
+    "keywords": [
+      "spirit",
+      "haunt",
+      "specter",
+      "apparition",
+      "wraith",
+      "shade",
+      "phantom",
+      "entity",
+      "shadow",
+      "silhouette",
+      "pac-man",
+      "spooky",
+      "halloween",
+      "haunted",
+      "invisible",
+      "hidden",
+      "empty",
+      "dead",
+      "obsolete",
+      "outdated"
+    ]
+  }
+}

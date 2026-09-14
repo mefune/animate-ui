@@ -1,0 +1,28 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "icons-align-start-horizontal",
+  "type": "registry:ui",
+  "title": "Align Start Horizontal Icon",
+  "description": "Align Start Horizontal icon component.",
+  "registryDependencies": [
+    "@animate-ui/icons-icon"
+  ],
+  "dependencies": [
+    "motion"
+  ],
+  "files": [
+    {
+      "path": "registry/icons/align-start-horizontal/index.tsx",
+      "type": "registry:ui",
+      "target": "components/animate-ui/icons/align-start-horizontal.tsx"
+    }
+  ],
+  "meta": {
+    "keywords": [
+      "top",
+      "items",
+      "flex",
+      "justify"
+    ]
+  }
+}

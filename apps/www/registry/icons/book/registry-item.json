@@ -1,0 +1,53 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "icons-book",
+  "type": "registry:ui",
+  "title": "Book Icon",
+  "description": "Book icon component.",
+  "registryDependencies": [
+    "@animate-ui/icons-icon"
+  ],
+  "dependencies": [
+    "motion"
+  ],
+  "files": [
+    {
+      "path": "registry/icons/book/index.tsx",
+      "type": "registry:ui",
+      "target": "components/animate-ui/icons/book.tsx"
+    }
+  ],
+  "meta": {
+    "keywords": [
+      "reading",
+      "paperback",
+      "booklet",
+      "magazine",
+      "leaflet",
+      "pamphlet",
+      "tome",
+      "library",
+      "writing",
+      "written",
+      "writer",
+      "author",
+      "story",
+      "script",
+      "fiction",
+      "novel",
+      "information",
+      "knowledge",
+      "education",
+      "high school",
+      "university",
+      "college",
+      "academy",
+      "student",
+      "study",
+      "learning",
+      "homework",
+      "research",
+      "documentation"
+    ]
+  }
+}

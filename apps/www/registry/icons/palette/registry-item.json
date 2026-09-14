@@ -1,0 +1,32 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "icons-palette",
+  "type": "registry:ui",
+  "title": "Palette Icon",
+  "description": "Palette icon component.",
+  "registryDependencies": [
+    "@animate-ui/icons-icon"
+  ],
+  "dependencies": [
+    "motion"
+  ],
+  "files": [
+    {
+      "path": "registry/icons/palette/index.tsx",
+      "type": "registry:ui",
+      "target": "components/animate-ui/icons/palette.tsx"
+    }
+  ],
+  "meta": {
+    "keywords": [
+      "colors",
+      "colours",
+      "theme",
+      "scheme",
+      "paint",
+      "watercolor",
+      "watercolour",
+      "artist"
+    ]
+  }
+}

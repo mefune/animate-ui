@@ -1,0 +1,28 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "icons-circle-alert",
+  "type": "registry:ui",
+  "title": "Circle Alert Icon",
+  "description": "Circle Alert icon component.",
+  "registryDependencies": [
+    "@animate-ui/icons-icon"
+  ],
+  "dependencies": [
+    "motion"
+  ],
+  "files": [
+    {
+      "path": "registry/icons/circle-alert/index.tsx",
+      "type": "registry:ui",
+      "target": "components/animate-ui/icons/circle-alert.tsx"
+    }
+  ],
+  "meta": {
+    "keywords": [
+      "warning",
+      "alert",
+      "danger",
+      "exclamation mark"
+    ]
+  }
+}

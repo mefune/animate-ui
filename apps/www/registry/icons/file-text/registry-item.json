@@ -1,0 +1,28 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "icons-file-text",
+  "type": "registry:ui",
+  "title": "File Text Icon",
+  "description": "File Text icon component.",
+  "registryDependencies": [
+    "@animate-ui/icons-icon"
+  ],
+  "dependencies": [
+    "motion"
+  ],
+  "files": [
+    {
+      "path": "registry/icons/file-text/index.tsx",
+      "type": "registry:ui",
+      "target": "components/animate-ui/icons/file-text.tsx"
+    }
+  ],
+  "meta": {
+    "keywords": [
+      "data",
+      "txt",
+      "pdf",
+      "document"
+    ]
+  }
+}
