@@ -11048,6 +11048,42 @@ export const index: Record<string, any> = {
     })(),
     command: '@animate-ui/icons-align-vertical-distribute-center',
   },
+  'icons-archive': {
+    name: 'icons-archive',
+    description: 'Archive icon component.',
+    type: 'registry:ui',
+    dependencies: ['motion'],
+    devDependencies: undefined,
+    registryDependencies: ['@animate-ui/icons-icon'],
+    files: [
+      {
+        path: 'registry/icons/archive/index.tsx',
+        type: 'registry:ui',
+        target: 'components/animate-ui/icons/archive.tsx',
+        content:
+          '\'use client\';\n\nimport * as React from \'react\';\nimport { motion, type Variants } from \'motion/react\';\n\nimport {\n  getVariants,\n  useAnimateIconContext,\n  IconWrapper,\n  type IconProps,\n} from \'@/components/animate-ui/icons/icon\';\n\ntype ArchiveProps = IconProps<keyof typeof animations>;\n\nconst animations = {\n  default: {\n    lid: {\n      initial: {\n        y: 0,\n        rotate: 0,\n        transformOrigin: \'2px 5.5px\',\n        transition: { duration: 0.15 },\n      },\n      animate: {\n        y: [0, -1, 0],\n        rotate: [0, -2, 0],\n        transformOrigin: \'2px 5.5px\',\n        transition: { duration: 0.5, times: [0, 0.4, 1], ease: \'easeInOut\' },\n      },\n    },\n    body: {},\n    handle: {},\n  } satisfies Record<string, Variants>,\n} as const;\n\nfunction IconComponent({ size, ...props }: ArchiveProps) {\n  const { controls } = useAnimateIconContext();\n  const variants = getVariants(animations);\n\n  return (\n    <motion.svg\n      xmlns="http://www.w3.org/2000/svg"\n      width={size}\n      height={size}\n      viewBox="0 0 24 24"\n      fill="none"\n      stroke="currentColor"\n      strokeWidth={2}\n      strokeLinecap="round"\n      strokeLinejoin="round"\n      {...props}\n    >\n      <motion.rect\n        width="20"\n        height="5"\n        x="2"\n        y="3"\n        rx="1"\n        variants={variants.lid}\n        initial="initial"\n        animate={controls}\n        style={{ transformBox: \'view-box\' }}\n      />\n      <motion.path\n        d="M4 8v11a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8"\n        variants={variants.body}\n        initial="initial"\n        animate={controls}\n      />\n      <motion.path\n        d="M10 12h4"\n        variants={variants.handle}\n        initial="initial"\n        animate={controls}\n      />\n    </motion.svg>\n  );\n}\n\nfunction Archive(props: ArchiveProps) {\n  return <IconWrapper icon={IconComponent} {...props} />;\n}\n\nexport {\n  animations,\n  Archive,\n  Archive as ArchiveIcon,\n  type ArchiveProps,\n  type ArchiveProps as ArchiveIconProps,\n};',
+      },
+    ],
+    keywords: ['index', 'backup', 'box', 'storage', 'records'],
+    component: (function () {
+      const LazyComp = React.lazy(async () => {
+        const mod = await import('@/registry/icons/archive/index.tsx');
+        const exportName =
+          Object.keys(mod).find(
+            (key) =>
+              typeof mod[key] === 'function' || typeof mod[key] === 'object',
+          ) || 'icons-archive';
+        const Comp = mod.default || mod[exportName];
+        if (mod.animations) {
+          (LazyComp as any).animations = mod.animations;
+        }
+        return { default: Comp };
+      });
+      LazyComp.demoProps = {};
+      return LazyComp;
+    })(),
+    command: '@animate-ui/icons-archive',
+  },
   'icons-arrow-down': {
     name: 'icons-arrow-down',
     description: 'Arrow down icon component.',
@@ -16747,6 +16783,42 @@ export const index: Record<string, any> = {
     })(),
     command: '@animate-ui/icons-list',
   },
+  'icons-list-filter': {
+    name: 'icons-list-filter',
+    description: 'List Filter icon component.',
+    type: 'registry:ui',
+    dependencies: ['motion'],
+    devDependencies: undefined,
+    registryDependencies: ['@animate-ui/icons-icon'],
+    files: [
+      {
+        path: 'registry/icons/list-filter/index.tsx',
+        type: 'registry:ui',
+        target: 'components/animate-ui/icons/list-filter.tsx',
+        content:
+          '\'use client\';\n\nimport * as React from \'react\';\nimport { motion, type Variants } from \'motion/react\';\n\nimport {\n  getVariants,\n  useAnimateIconContext,\n  IconWrapper,\n  type IconProps,\n} from \'@/components/animate-ui/icons/icon\';\n\ntype ListFilterProps = IconProps<keyof typeof animations>;\n\nfunction bar(delay: number): Variants {\n  return {\n    initial: { y: 0, opacity: 1, transition: { duration: 0.15 } },\n    animate: {\n      y: [-3, 0],\n      opacity: [0, 1],\n      transition: { duration: 0.3, delay, ease: \'easeOut\' },\n    },\n  };\n}\n\nconst animations = {\n  default: {\n    top: bar(0),\n    middle: bar(0.09),\n    bottom: bar(0.18),\n  } satisfies Record<string, Variants>,\n} as const;\n\nfunction IconComponent({ size, ...props }: ListFilterProps) {\n  const { controls } = useAnimateIconContext();\n  const variants = getVariants(animations);\n\n  return (\n    <motion.svg\n      xmlns="http://www.w3.org/2000/svg"\n      width={size}\n      height={size}\n      viewBox="0 0 24 24"\n      fill="none"\n      stroke="currentColor"\n      strokeWidth={2}\n      strokeLinecap="round"\n      strokeLinejoin="round"\n      {...props}\n    >\n      <motion.path\n        d="M2 5h20"\n        variants={variants.top}\n        initial="initial"\n        animate={controls}\n      />\n      <motion.path\n        d="M6 12h12"\n        variants={variants.middle}\n        initial="initial"\n        animate={controls}\n      />\n      <motion.path\n        d="M9 19h6"\n        variants={variants.bottom}\n        initial="initial"\n        animate={controls}\n      />\n    </motion.svg>\n  );\n}\n\nfunction ListFilter(props: ListFilterProps) {\n  return <IconWrapper icon={IconComponent} {...props} />;\n}\n\nexport {\n  animations,\n  ListFilter,\n  ListFilter as ListFilterIcon,\n  type ListFilterProps,\n  type ListFilterProps as ListFilterIconProps,\n};',
+      },
+    ],
+    keywords: ['options'],
+    component: (function () {
+      const LazyComp = React.lazy(async () => {
+        const mod = await import('@/registry/icons/list-filter/index.tsx');
+        const exportName =
+          Object.keys(mod).find(
+            (key) =>
+              typeof mod[key] === 'function' || typeof mod[key] === 'object',
+          ) || 'icons-list-filter';
+        const Comp = mod.default || mod[exportName];
+        if (mod.animations) {
+          (LazyComp as any).animations = mod.animations;
+        }
+        return { default: Comp };
+      });
+      LazyComp.demoProps = {};
+      return LazyComp;
+    })(),
+    command: '@animate-ui/icons-list-filter',
+  },
   'icons-loader': {
     name: 'icons-loader',
     description: 'Loader icon component.',
@@ -19606,6 +19678,57 @@ export const index: Record<string, any> = {
     })(),
     command: '@animate-ui/icons-pause',
   },
+  'icons-pencil-line': {
+    name: 'icons-pencil-line',
+    description: 'Pencil Line icon component.',
+    type: 'registry:ui',
+    dependencies: ['motion'],
+    devDependencies: undefined,
+    registryDependencies: ['@animate-ui/icons-icon'],
+    files: [
+      {
+        path: 'registry/icons/pencil-line/index.tsx',
+        type: 'registry:ui',
+        target: 'components/animate-ui/icons/pencil-line.tsx',
+        content:
+          '\'use client\';\n\nimport * as React from \'react\';\nimport { motion, type Variants } from \'motion/react\';\n\nimport {\n  getVariants,\n  useAnimateIconContext,\n  IconWrapper,\n  type IconProps,\n} from \'@/components/animate-ui/icons/icon\';\n\ntype PencilLineProps = IconProps<keyof typeof animations>;\n\nconst animations = {\n  default: {\n    pencil: {\n      initial: { x: 0, y: 0, transition: { duration: 0.2, ease: \'easeOut\' } },\n      animate: {\n        x: [0, 1.3, 0],\n        y: [0, -1.3, 0],\n        transition: { duration: 0.5, times: [0, 0.4, 1], ease: \'easeOut\' },\n      },\n    },\n    line: {\n      initial: { pathLength: 1, opacity: 1, transition: { duration: 0.15 } },\n      animate: {\n        pathLength: [0, 1],\n        opacity: [0, 1],\n        transition: { duration: 0.3, delay: 0.12, ease: \'easeOut\' },\n      },\n    },\n  } satisfies Record<string, Variants>,\n} as const;\n\nfunction IconComponent({ size, ...props }: PencilLineProps) {\n  const { controls } = useAnimateIconContext();\n  const variants = getVariants(animations);\n\n  return (\n    <motion.svg\n      xmlns="http://www.w3.org/2000/svg"\n      width={size}\n      height={size}\n      viewBox="0 0 24 24"\n      fill="none"\n      stroke="currentColor"\n      strokeWidth={2}\n      strokeLinecap="round"\n      strokeLinejoin="round"\n      {...props}\n    >\n      <motion.path\n        d="M13 21h8"\n        variants={variants.line}\n        initial="initial"\n        animate={controls}\n      />\n      <motion.g variants={variants.pencil} initial="initial" animate={controls}>\n        <path d="m15 5 4 4" />\n        <path d="M21.174 6.812a1 1 0 0 0-3.986-3.987L3.842 16.174a2 2 0 0 0-.5.83l-1.321 4.352a.5.5 0 0 0 .623.622l4.353-1.32a2 2 0 0 0 .83-.497z" />\n      </motion.g>\n    </motion.svg>\n  );\n}\n\nfunction PencilLine(props: PencilLineProps) {\n  return <IconWrapper icon={IconComponent} {...props} />;\n}\n\nexport {\n  animations,\n  PencilLine,\n  PencilLine as PencilLineIcon,\n  type PencilLineProps,\n  type PencilLineProps as PencilLineIconProps,\n};',
+      },
+    ],
+    keywords: [
+      'pencil',
+      'change',
+      'create',
+      'draw',
+      'sketch',
+      'draft',
+      'writer',
+      'writing',
+      'biro',
+      'ink',
+      'marker',
+      'felt tip',
+      'stationery',
+      'artist',
+    ],
+    component: (function () {
+      const LazyComp = React.lazy(async () => {
+        const mod = await import('@/registry/icons/pencil-line/index.tsx');
+        const exportName =
+          Object.keys(mod).find(
+            (key) =>
+              typeof mod[key] === 'function' || typeof mod[key] === 'object',
+          ) || 'icons-pencil-line';
+        const Comp = mod.default || mod[exportName];
+        if (mod.animations) {
+          (LazyComp as any).animations = mod.animations;
+        }
+        return { default: Comp };
+      });
+      LazyComp.demoProps = {};
+      return LazyComp;
+    })(),
+    command: '@animate-ui/icons-pencil-line',
+  },
   'icons-pencil-ruler': {
     name: 'icons-pencil-ruler',
     description: 'Pencil Ruler icon component.',
@@ -20773,6 +20896,42 @@ export const index: Record<string, any> = {
       return LazyComp;
     })(),
     command: '@animate-ui/icons-settings',
+  },
+  'icons-share-2': {
+    name: 'icons-share-2',
+    description: 'Share 2 icon component.',
+    type: 'registry:ui',
+    dependencies: ['motion'],
+    devDependencies: undefined,
+    registryDependencies: ['@animate-ui/icons-icon'],
+    files: [
+      {
+        path: 'registry/icons/share-2/index.tsx',
+        type: 'registry:ui',
+        target: 'components/animate-ui/icons/share-2.tsx',
+        content:
+          '\'use client\';\n\nimport * as React from \'react\';\nimport { motion, type Variants } from \'motion/react\';\n\nimport {\n  getVariants,\n  useAnimateIconContext,\n  IconWrapper,\n  type IconProps,\n} from \'@/components/animate-ui/icons/icon\';\n\ntype Share2Props = IconProps<keyof typeof animations>;\n\nconst animations = {\n  default: {\n    hub: {},\n    topNode: {\n      initial: { x: 0, y: 0, transition: { duration: 0.15 } },\n      animate: {\n        x: [0, 1.6, 0],\n        y: [0, -1.6, 0],\n        transition: { duration: 0.45, times: [0, 0.4, 1], ease: \'easeOut\' },\n      },\n    },\n    bottomNode: {\n      initial: { x: 0, y: 0, transition: { duration: 0.15 } },\n      animate: {\n        x: [0, 1.6, 0],\n        y: [0, 1.6, 0],\n        transition: { duration: 0.45, times: [0, 0.4, 1], ease: \'easeOut\' },\n      },\n    },\n    line1: {\n      initial: { pathLength: 1, transition: { duration: 0.15 } },\n      animate: {\n        pathLength: [0, 1],\n        transition: { duration: 0.35, delay: 0.08, ease: \'easeOut\' },\n      },\n    },\n    line2: {\n      initial: { pathLength: 1, transition: { duration: 0.15 } },\n      animate: {\n        pathLength: [0, 1],\n        transition: { duration: 0.35, delay: 0.08, ease: \'easeOut\' },\n      },\n    },\n  } satisfies Record<string, Variants>,\n} as const;\n\nfunction IconComponent({ size, ...props }: Share2Props) {\n  const { controls } = useAnimateIconContext();\n  const variants = getVariants(animations);\n\n  return (\n    <motion.svg\n      xmlns="http://www.w3.org/2000/svg"\n      width={size}\n      height={size}\n      viewBox="0 0 24 24"\n      fill="none"\n      stroke="currentColor"\n      strokeWidth={2}\n      strokeLinecap="round"\n      strokeLinejoin="round"\n      {...props}\n    >\n      <motion.circle\n        cx="18"\n        cy="5"\n        r="3"\n        variants={variants.topNode}\n        initial="initial"\n        animate={controls}\n      />\n      <motion.circle\n        cx="6"\n        cy="12"\n        r="3"\n        variants={variants.hub}\n        initial="initial"\n        animate={controls}\n      />\n      <motion.circle\n        cx="18"\n        cy="19"\n        r="3"\n        variants={variants.bottomNode}\n        initial="initial"\n        animate={controls}\n      />\n      <motion.line\n        x1="8.59"\n        x2="15.42"\n        y1="13.51"\n        y2="17.49"\n        variants={variants.line2}\n        initial="initial"\n        animate={controls}\n      />\n      <motion.line\n        x1="15.41"\n        x2="8.59"\n        y1="6.51"\n        y2="10.49"\n        variants={variants.line1}\n        initial="initial"\n        animate={controls}\n      />\n    </motion.svg>\n  );\n}\n\nfunction Share2(props: Share2Props) {\n  return <IconWrapper icon={IconComponent} {...props} />;\n}\n\nexport {\n  animations,\n  Share2,\n  Share2 as Share2Icon,\n  type Share2Props,\n  type Share2Props as Share2IconProps,\n};',
+      },
+    ],
+    keywords: ['network', 'connections'],
+    component: (function () {
+      const LazyComp = React.lazy(async () => {
+        const mod = await import('@/registry/icons/share-2/index.tsx');
+        const exportName =
+          Object.keys(mod).find(
+            (key) =>
+              typeof mod[key] === 'function' || typeof mod[key] === 'object',
+          ) || 'icons-share-2';
+        const Comp = mod.default || mod[exportName];
+        if (mod.animations) {
+          (LazyComp as any).animations = mod.animations;
+        }
+        return { default: Comp };
+      });
+      LazyComp.demoProps = {};
+      return LazyComp;
+    })(),
+    command: '@animate-ui/icons-share-2',
   },
   'icons-shield-check': {
     name: 'icons-shield-check',

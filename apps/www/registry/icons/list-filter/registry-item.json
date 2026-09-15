@@ -1,0 +1,25 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "icons-list-filter",
+  "type": "registry:ui",
+  "title": "List Filter Icon",
+  "description": "List Filter icon component.",
+  "registryDependencies": [
+    "@animate-ui/icons-icon"
+  ],
+  "dependencies": [
+    "motion"
+  ],
+  "files": [
+    {
+      "path": "registry/icons/list-filter/index.tsx",
+      "type": "registry:ui",
+      "target": "components/animate-ui/icons/list-filter.tsx"
+    }
+  ],
+  "meta": {
+    "keywords": [
+      "options"
+    ]
+  }
+}

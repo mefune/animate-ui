@@ -7017,6 +7017,34 @@
       }
     },
     {
+      "name": "icons-archive",
+      "type": "registry:ui",
+      "title": "Archive Icon",
+      "description": "Archive icon component.",
+      "registryDependencies": [
+        "@animate-ui/icons-icon"
+      ],
+      "dependencies": [
+        "motion"
+      ],
+      "files": [
+        {
+          "path": "registry/icons/archive/index.tsx",
+          "type": "registry:ui",
+          "target": "components/animate-ui/icons/archive.tsx"
+        }
+      ],
+      "meta": {
+        "keywords": [
+          "index",
+          "backup",
+          "box",
+          "storage",
+          "records"
+        ]
+      }
+    },
+    {
       "name": "icons-arrow-down",
       "type": "registry:ui",
       "title": "Arrow Down Icon",
@@ -11184,6 +11212,30 @@
       }
     },
     {
+      "name": "icons-list-filter",
+      "type": "registry:ui",
+      "title": "List Filter Icon",
+      "description": "List Filter icon component.",
+      "registryDependencies": [
+        "@animate-ui/icons-icon"
+      ],
+      "dependencies": [
+        "motion"
+      ],
+      "files": [
+        {
+          "path": "registry/icons/list-filter/index.tsx",
+          "type": "registry:ui",
+          "target": "components/animate-ui/icons/list-filter.tsx"
+        }
+      ],
+      "meta": {
+        "keywords": [
+          "options"
+        ]
+      }
+    },
+    {
       "name": "icons-loader",
       "type": "registry:ui",
       "title": "Loader Icon",
@@ -13196,6 +13248,43 @@
       }
     },
     {
+      "name": "icons-pencil-line",
+      "type": "registry:ui",
+      "title": "Pencil Line Icon",
+      "description": "Pencil Line icon component.",
+      "registryDependencies": [
+        "@animate-ui/icons-icon"
+      ],
+      "dependencies": [
+        "motion"
+      ],
+      "files": [
+        {
+          "path": "registry/icons/pencil-line/index.tsx",
+          "type": "registry:ui",
+          "target": "components/animate-ui/icons/pencil-line.tsx"
+        }
+      ],
+      "meta": {
+        "keywords": [
+          "pencil",
+          "change",
+          "create",
+          "draw",
+          "sketch",
+          "draft",
+          "writer",
+          "writing",
+          "biro",
+          "ink",
+          "marker",
+          "felt tip",
+          "stationery",
+          "artist"
+        ]
+      }
+    },
+    {
       "name": "icons-pencil-ruler",
       "type": "registry:ui",
       "title": "Pencil Ruler Icon",
@@ -14056,6 +14145,31 @@
           "edit",
           "gear",
           "preferences"
+        ]
+      }
+    },
+    {
+      "name": "icons-share-2",
+      "type": "registry:ui",
+      "title": "Share 2 Icon",
+      "description": "Share 2 icon component.",
+      "registryDependencies": [
+        "@animate-ui/icons-icon"
+      ],
+      "dependencies": [
+        "motion"
+      ],
+      "files": [
+        {
+          "path": "registry/icons/share-2/index.tsx",
+          "type": "registry:ui",
+          "target": "components/animate-ui/icons/share-2.tsx"
+        }
+      ],
+      "meta": {
+        "keywords": [
+          "network",
+          "connections"
         ]
       }
     },
