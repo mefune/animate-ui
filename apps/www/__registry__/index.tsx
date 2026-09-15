@@ -16595,6 +16595,42 @@ export const index: Record<string, any> = {
     })(),
     command: '@animate-ui/icons-layout-dashboard',
   },
+  'icons-layout-template': {
+    name: 'icons-layout-template',
+    description: 'Layout Template icon component.',
+    type: 'registry:ui',
+    dependencies: ['motion'],
+    devDependencies: undefined,
+    registryDependencies: ['@animate-ui/icons-icon'],
+    files: [
+      {
+        path: 'registry/icons/layout-template/index.tsx',
+        type: 'registry:ui',
+        target: 'components/animate-ui/icons/layout-template.tsx',
+        content:
+          '\'use client\';\n\nimport * as React from \'react\';\nimport { motion, type Variants } from \'motion/react\';\n\nimport {\n  getVariants,\n  useAnimateIconContext,\n  IconWrapper,\n  type IconProps,\n} from \'@/components/animate-ui/icons/icon\';\n\ntype LayoutTemplateProps = IconProps<keyof typeof animations>;\n\nconst animations = {\n  default: {\n    header: {\n      initial: { y: 0, opacity: 1 },\n      animate: {\n        y: [0, -4, -4, 0],\n        opacity: [1, 0, 0, 1],\n        transition: { duration: 0.5, times: [0, 0.3, 0.4, 1], ease: \'easeOut\' },\n      },\n    },\n    left: {\n      initial: { x: 0, opacity: 1 },\n      animate: {\n        x: [0, -4, -4, 0],\n        opacity: [1, 0, 0, 1],\n        transition: {\n          duration: 0.5,\n          times: [0, 0.3, 0.4, 1],\n          ease: \'easeOut\',\n          delay: 0.14,\n        },\n      },\n    },\n    right: {\n      initial: { x: 0, opacity: 1 },\n      animate: {\n        x: [0, 4, 4, 0],\n        opacity: [1, 0, 0, 1],\n        transition: {\n          duration: 0.5,\n          times: [0, 0.3, 0.4, 1],\n          ease: \'easeOut\',\n          delay: 0.28,\n        },\n      },\n    },\n  } satisfies Record<string, Variants>,\n} as const;\n\nfunction IconComponent({ size, ...props }: LayoutTemplateProps) {\n  const { controls } = useAnimateIconContext();\n  const variants = getVariants(animations);\n\n  return (\n    <motion.svg\n      xmlns="http://www.w3.org/2000/svg"\n      width={size}\n      height={size}\n      viewBox="0 0 24 24"\n      fill="none"\n      stroke="currentColor"\n      strokeWidth={2}\n      strokeLinecap="round"\n      strokeLinejoin="round"\n      {...props}\n    >\n      <motion.rect\n        width="18"\n        height="7"\n        x="3"\n        y="3"\n        rx="1"\n        variants={variants.header}\n        initial="initial"\n        animate={controls}\n      />\n      <motion.rect\n        width="9"\n        height="7"\n        x="3"\n        y="14"\n        rx="1"\n        variants={variants.left}\n        initial="initial"\n        animate={controls}\n      />\n      <motion.rect\n        width="5"\n        height="7"\n        x="16"\n        y="14"\n        rx="1"\n        variants={variants.right}\n        initial="initial"\n        animate={controls}\n      />\n    </motion.svg>\n  );\n}\n\nfunction LayoutTemplate(props: LayoutTemplateProps) {\n  return <IconWrapper icon={IconComponent} {...props} />;\n}\n\nexport {\n  animations,\n  LayoutTemplate,\n  LayoutTemplate as LayoutTemplateIcon,\n  type LayoutTemplateProps,\n  type LayoutTemplateProps as LayoutTemplateIconProps,\n};',
+      },
+    ],
+    keywords: ['window', 'webpage', 'block', 'section'],
+    component: (function () {
+      const LazyComp = React.lazy(async () => {
+        const mod = await import('@/registry/icons/layout-template/index.tsx');
+        const exportName =
+          Object.keys(mod).find(
+            (key) =>
+              typeof mod[key] === 'function' || typeof mod[key] === 'object',
+          ) || 'icons-layout-template';
+        const Comp = mod.default || mod[exportName];
+        if (mod.animations) {
+          (LazyComp as any).animations = mod.animations;
+        }
+        return { default: Comp };
+      });
+      LazyComp.demoProps = {};
+      return LazyComp;
+    })(),
+    command: '@animate-ui/icons-layout-template',
+  },
   'icons-lightbulb': {
     name: 'icons-lightbulb',
     description: 'Lightbulb icon component.',

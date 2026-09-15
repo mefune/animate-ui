@@ -226,6 +226,7 @@ const addedIcons = [
       'icons-group',
       'icons-image',
       'icons-info',
+      'icons-layout-template',
       'icons-list-filter',
       'icons-mail',
       'icons-mail-open',

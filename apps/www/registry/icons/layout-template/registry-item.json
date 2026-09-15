@@ -1,0 +1,28 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "icons-layout-template",
+  "type": "registry:ui",
+  "title": "Layout Template Icon",
+  "description": "Layout Template icon component.",
+  "registryDependencies": [
+    "@animate-ui/icons-icon"
+  ],
+  "dependencies": [
+    "motion"
+  ],
+  "files": [
+    {
+      "path": "registry/icons/layout-template/index.tsx",
+      "type": "registry:ui",
+      "target": "components/animate-ui/icons/layout-template.tsx"
+    }
+  ],
+  "meta": {
+    "keywords": [
+      "window",
+      "webpage",
+      "block",
+      "section"
+    ]
+  }
+}
