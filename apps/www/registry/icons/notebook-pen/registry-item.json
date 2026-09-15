@@ -1,0 +1,49 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "icons-notebook-pen",
+  "type": "registry:ui",
+  "title": "Notebook Pen Icon",
+  "description": "Notebook Pen icon component.",
+  "registryDependencies": [
+    "@animate-ui/icons-icon"
+  ],
+  "dependencies": [
+    "motion"
+  ],
+  "files": [
+    {
+      "path": "registry/icons/notebook-pen/index.tsx",
+      "type": "registry:ui",
+      "target": "components/animate-ui/icons/notebook-pen.tsx"
+    }
+  ],
+  "meta": {
+    "keywords": [
+      "pencil",
+      "notepad",
+      "notes",
+      "noted",
+      "stationery",
+      "sketchbook",
+      "organizer",
+      "organiser",
+      "planner",
+      "diary",
+      "journal",
+      "writing",
+      "write",
+      "written",
+      "reading",
+      "high school",
+      "university",
+      "college",
+      "academy",
+      "student",
+      "study",
+      "research",
+      "homework",
+      "eraser",
+      "rubber"
+    ]
+  }
+}

@@ -18967,6 +18967,68 @@ export const index: Record<string, any> = {
     })(),
     command: '@animate-ui/icons-nfc',
   },
+  'icons-notebook-pen': {
+    name: 'icons-notebook-pen',
+    description: 'Notebook Pen icon component.',
+    type: 'registry:ui',
+    dependencies: ['motion'],
+    devDependencies: undefined,
+    registryDependencies: ['@animate-ui/icons-icon'],
+    files: [
+      {
+        path: 'registry/icons/notebook-pen/index.tsx',
+        type: 'registry:ui',
+        target: 'components/animate-ui/icons/notebook-pen.tsx',
+        content:
+          '\'use client\';\n\nimport * as React from \'react\';\nimport { motion, type Variants } from \'motion/react\';\n\nimport {\n  getVariants,\n  useAnimateIconContext,\n  IconWrapper,\n  type IconProps,\n} from \'@/components/animate-ui/icons/icon\';\n\ntype NotebookPenProps = IconProps<keyof typeof animations>;\n\nconst animations = {\n  default: {\n    book: {},\n    rings: {},\n    pen: {\n      initial: { x: 0, y: 0 },\n      animate: {\n        x: [0, -2.2, -2.2, 0],\n        y: [0, 0.4, 0.4, 0],\n        transition: {\n          duration: 0.6,\n          times: [0, 0.35, 0.6, 1],\n          ease: \'easeInOut\',\n        },\n      },\n    },\n    line: {\n      initial: { pathLength: 0, opacity: 0 },\n      animate: {\n        pathLength: [0, 1, 1, 1],\n        opacity: [0, 1, 1, 0],\n        transition: {\n          duration: 0.6,\n          times: [0, 0.35, 0.7, 1],\n          ease: \'easeInOut\',\n        },\n      },\n    },\n  } satisfies Record<string, Variants>,\n} as const;\n\nfunction IconComponent({ size, ...props }: NotebookPenProps) {\n  const { controls } = useAnimateIconContext();\n  const variants = getVariants(animations);\n\n  return (\n    <motion.svg\n      xmlns="http://www.w3.org/2000/svg"\n      width={size}\n      height={size}\n      viewBox="0 0 24 24"\n      fill="none"\n      stroke="currentColor"\n      strokeWidth={2}\n      strokeLinecap="round"\n      strokeLinejoin="round"\n      {...props}\n    >\n      <motion.path\n        d="M13.4 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2v-7.4"\n        variants={variants.book}\n        initial="initial"\n        animate={controls}\n      />\n      <motion.path\n        d="M2 6h4"\n        variants={variants.rings}\n        initial="initial"\n        animate={controls}\n      />\n      <motion.path\n        d="M2 10h4"\n        variants={variants.rings}\n        initial="initial"\n        animate={controls}\n      />\n      <motion.path\n        d="M2 14h4"\n        variants={variants.rings}\n        initial="initial"\n        animate={controls}\n      />\n      <motion.path\n        d="M2 18h4"\n        variants={variants.rings}\n        initial="initial"\n        animate={controls}\n      />\n      <motion.path\n        d="M9 16h4"\n        strokeWidth={1.5}\n        variants={variants.line}\n        initial="initial"\n        animate={controls}\n      />\n      <motion.path\n        d="M21.378 5.626a1 1 0 1 0-3.004-3.004l-5.01 5.012a2 2 0 0 0-.506.854l-.837 2.87a.5.5 0 0 0 .62.62l2.87-.837a2 2 0 0 0 .854-.506z"\n        variants={variants.pen}\n        initial="initial"\n        animate={controls}\n      />\n    </motion.svg>\n  );\n}\n\nfunction NotebookPen(props: NotebookPenProps) {\n  return <IconWrapper icon={IconComponent} {...props} />;\n}\n\nexport {\n  animations,\n  NotebookPen,\n  NotebookPen as NotebookPenIcon,\n  type NotebookPenProps,\n  type NotebookPenProps as NotebookPenIconProps,\n};',
+      },
+    ],
+    keywords: [
+      'pencil',
+      'notepad',
+      'notes',
+      'noted',
+      'stationery',
+      'sketchbook',
+      'organizer',
+      'organiser',
+      'planner',
+      'diary',
+      'journal',
+      'writing',
+      'write',
+      'written',
+      'reading',
+      'high school',
+      'university',
+      'college',
+      'academy',
+      'student',
+      'study',
+      'research',
+      'homework',
+      'eraser',
+      'rubber',
+    ],
+    component: (function () {
+      const LazyComp = React.lazy(async () => {
+        const mod = await import('@/registry/icons/notebook-pen/index.tsx');
+        const exportName =
+          Object.keys(mod).find(
+            (key) =>
+              typeof mod[key] === 'function' || typeof mod[key] === 'object',
+          ) || 'icons-notebook-pen';
+        const Comp = mod.default || mod[exportName];
+        if (mod.animations) {
+          (LazyComp as any).animations = mod.animations;
+        }
+        return { default: Comp };
+      });
+      LazyComp.demoProps = {};
+      return LazyComp;
+    })(),
+    command: '@animate-ui/icons-notebook-pen',
+  },
   'icons-orbit': {
     name: 'icons-orbit',
     description: 'Orbit icon component.',
@@ -20932,6 +20994,53 @@ export const index: Record<string, any> = {
       return LazyComp;
     })(),
     command: '@animate-ui/icons-settings',
+  },
+  'icons-shapes': {
+    name: 'icons-shapes',
+    description: 'Shapes icon component.',
+    type: 'registry:ui',
+    dependencies: ['motion'],
+    devDependencies: undefined,
+    registryDependencies: ['@animate-ui/icons-icon'],
+    files: [
+      {
+        path: 'registry/icons/shapes/index.tsx',
+        type: 'registry:ui',
+        target: 'components/animate-ui/icons/shapes.tsx',
+        content:
+          '\'use client\';\n\nimport * as React from \'react\';\nimport { motion, type Variants } from \'motion/react\';\n\nimport {\n  getVariants,\n  useAnimateIconContext,\n  IconWrapper,\n  type IconProps,\n} from \'@/components/animate-ui/icons/icon\';\n\ntype ShapesProps = IconProps<keyof typeof animations>;\n\nconst animations = {\n  default: {\n    triangle: {\n      initial: { scale: 1, transformOrigin: \'50% 50%\' },\n      animate: {\n        scale: [1, 0.72, 1.08, 1],\n        transformOrigin: \'50% 50%\',\n        transition: {\n          duration: 0.45,\n          times: [0, 0.35, 0.75, 1],\n          ease: \'easeOut\',\n          delay: 0,\n        },\n      },\n    },\n    square: {\n      initial: { scale: 1, transformOrigin: \'50% 50%\' },\n      animate: {\n        scale: [1, 0.72, 1.08, 1],\n        transformOrigin: \'50% 50%\',\n        transition: {\n          duration: 0.45,\n          times: [0, 0.35, 0.75, 1],\n          ease: \'easeOut\',\n          delay: 0.12,\n        },\n      },\n    },\n    circle: {\n      initial: { scale: 1, transformOrigin: \'50% 50%\' },\n      animate: {\n        scale: [1, 0.72, 1.08, 1],\n        transformOrigin: \'50% 50%\',\n        transition: {\n          duration: 0.45,\n          times: [0, 0.35, 0.75, 1],\n          ease: \'easeOut\',\n          delay: 0.24,\n        },\n      },\n    },\n  } satisfies Record<string, Variants>,\n} as const;\n\nfunction IconComponent({ size, ...props }: ShapesProps) {\n  const { controls } = useAnimateIconContext();\n  const variants = getVariants(animations);\n\n  return (\n    <motion.svg\n      xmlns="http://www.w3.org/2000/svg"\n      width={size}\n      height={size}\n      viewBox="0 0 24 24"\n      fill="none"\n      stroke="currentColor"\n      strokeWidth={2}\n      strokeLinecap="round"\n      strokeLinejoin="round"\n      {...props}\n    >\n      <motion.path\n        d="M8.3 10a.7.7 0 0 1-.626-1.079L11.4 3a.7.7 0 0 1 1.198-.043L16.3 8.9a.7.7 0 0 1-.572 1.1Z"\n        variants={variants.triangle}\n        initial="initial"\n        animate={controls}\n      />\n      <motion.rect\n        x="3"\n        y="14"\n        width="7"\n        height="7"\n        rx="1"\n        variants={variants.square}\n        initial="initial"\n        animate={controls}\n      />\n      <motion.circle\n        cx="17.5"\n        cy="17.5"\n        r="3.5"\n        variants={variants.circle}\n        initial="initial"\n        animate={controls}\n      />\n    </motion.svg>\n  );\n}\n\nfunction Shapes(props: ShapesProps) {\n  return <IconWrapper icon={IconComponent} {...props} />;\n}\n\nexport {\n  animations,\n  Shapes,\n  Shapes as ShapesIcon,\n  type ShapesProps,\n  type ShapesProps as ShapesIconProps,\n};',
+      },
+    ],
+    keywords: [
+      'triangle',
+      'equilateral',
+      'square',
+      'circle',
+      'classification',
+      'different',
+      'collection',
+      'toy',
+      'blocks',
+      'learning',
+    ],
+    component: (function () {
+      const LazyComp = React.lazy(async () => {
+        const mod = await import('@/registry/icons/shapes/index.tsx');
+        const exportName =
+          Object.keys(mod).find(
+            (key) =>
+              typeof mod[key] === 'function' || typeof mod[key] === 'object',
+          ) || 'icons-shapes';
+        const Comp = mod.default || mod[exportName];
+        if (mod.animations) {
+          (LazyComp as any).animations = mod.animations;
+        }
+        return { default: Comp };
+      });
+      LazyComp.demoProps = {};
+      return LazyComp;
+    })(),
+    command: '@animate-ui/icons-shapes',
   },
   'icons-share-2': {
     name: 'icons-share-2',

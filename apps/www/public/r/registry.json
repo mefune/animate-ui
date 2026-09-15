@@ -12746,6 +12746,54 @@
       }
     },
     {
+      "name": "icons-notebook-pen",
+      "type": "registry:ui",
+      "title": "Notebook Pen Icon",
+      "description": "Notebook Pen icon component.",
+      "registryDependencies": [
+        "@animate-ui/icons-icon"
+      ],
+      "dependencies": [
+        "motion"
+      ],
+      "files": [
+        {
+          "path": "registry/icons/notebook-pen/index.tsx",
+          "type": "registry:ui",
+          "target": "components/animate-ui/icons/notebook-pen.tsx"
+        }
+      ],
+      "meta": {
+        "keywords": [
+          "pencil",
+          "notepad",
+          "notes",
+          "noted",
+          "stationery",
+          "sketchbook",
+          "organizer",
+          "organiser",
+          "planner",
+          "diary",
+          "journal",
+          "writing",
+          "write",
+          "written",
+          "reading",
+          "high school",
+          "university",
+          "college",
+          "academy",
+          "student",
+          "study",
+          "research",
+          "homework",
+          "eraser",
+          "rubber"
+        ]
+      }
+    },
+    {
       "name": "icons-orbit",
       "type": "registry:ui",
       "title": "Orbit Icon",
@@ -14172,6 +14220,39 @@
           "edit",
           "gear",
           "preferences"
+        ]
+      }
+    },
+    {
+      "name": "icons-shapes",
+      "type": "registry:ui",
+      "title": "Shapes Icon",
+      "description": "Shapes icon component.",
+      "registryDependencies": [
+        "@animate-ui/icons-icon"
+      ],
+      "dependencies": [
+        "motion"
+      ],
+      "files": [
+        {
+          "path": "registry/icons/shapes/index.tsx",
+          "type": "registry:ui",
+          "target": "components/animate-ui/icons/shapes.tsx"
+        }
+      ],
+      "meta": {
+        "keywords": [
+          "triangle",
+          "equilateral",
+          "square",
+          "circle",
+          "classification",
+          "different",
+          "collection",
+          "toy",
+          "blocks",
+          "learning"
         ]
       }
     },
