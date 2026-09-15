@@ -17,8 +17,8 @@ const animations = {
     pencil: {
       initial: { x: 0, y: 0, transition: { duration: 0.2, ease: 'easeOut' } },
       animate: {
-        x: [0, 1.3, 0],
-        y: [0, -1.3, 0],
+        x: [0, 0.9, 0],
+        y: [0, -0.9, 0],
         transition: { duration: 0.5, times: [0, 0.4, 1], ease: 'easeOut' },
       },
     },
