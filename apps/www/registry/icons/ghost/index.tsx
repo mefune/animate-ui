@@ -18,7 +18,7 @@ const animations = {
     eyes: {
       initial: { x: 0 },
       animate: {
-        x: [0, 1.8, 1.8, -1.8, -1.8, 0],
+        x: [0, -1.8, -1.8, 1.8, 1.8, 0],
         transition: {
           duration: 1.4,
           times: [0, 0.2, 0.4, 0.6, 0.8, 1],

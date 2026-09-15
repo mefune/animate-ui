@@ -14,10 +14,17 @@ type MinusProps = IconProps<keyof typeof animations>;
 
 const animations = {
   default: {
-    bar: {
+    left: {
       initial: { pathLength: 1 },
       animate: {
-        pathLength: [1, 0.2, 1],
+        pathLength: [1, 0, 1],
+        transition: { duration: 0.9, times: [0, 0.4, 1], ease: 'easeInOut' },
+      },
+    },
+    right: {
+      initial: { pathLength: 1 },
+      animate: {
+        pathLength: [1, 0, 1],
         transition: { duration: 0.9, times: [0, 0.4, 1], ease: 'easeInOut' },
       },
     },
@@ -44,8 +51,14 @@ function IconComponent({ size, ...props }: MinusProps) {
       {...props}
     >
       <motion.path
-        d="M5 12h14"
-        variants={variants.bar}
+        d="M12 12H5"
+        variants={variants.left}
+        initial="initial"
+        animate={controls}
+      />
+      <motion.path
+        d="M12 12h7"
+        variants={variants.right}
         initial="initial"
         animate={controls}
       />

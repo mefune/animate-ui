@@ -19,28 +19,28 @@ const animations = {
       initial: { opacity: 1 },
       animate: {
         opacity: [0, 1],
-        transition: { duration: 0.3, delay: 0.1, ease: 'easeOut' },
+        transition: { duration: 0.3, delay: 0.38, ease: 'easeOut' },
       },
     },
     dab2: {
       initial: { opacity: 1 },
       animate: {
         opacity: [0, 1],
-        transition: { duration: 0.3, delay: 0.24, ease: 'easeOut' },
+        transition: { duration: 0.3, delay: 0.52, ease: 'easeOut' },
       },
     },
     dab3: {
       initial: { opacity: 1 },
       animate: {
         opacity: [0, 1],
-        transition: { duration: 0.3, delay: 0.38, ease: 'easeOut' },
+        transition: { duration: 0.3, delay: 0.1, ease: 'easeOut' },
       },
     },
     dab4: {
       initial: { opacity: 1 },
       animate: {
         opacity: [0, 1],
-        transition: { duration: 0.3, delay: 0.52, ease: 'easeOut' },
+        transition: { duration: 0.3, delay: 0.24, ease: 'easeOut' },
       },
     },
   } satisfies Record<string, Variants>,
